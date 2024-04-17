@@ -1,7 +1,23 @@
 import numpy as np
 
 class CourseForm:
+    """
+    A class to represent a course recommendation form.
+
+    Methods:
+    - get_user_info: Gets the user's course preferences.
+    """
     def get_user_info(self):
+        """
+        Gets the user's course preferences.
+
+        Returns:
+        - roll_number: The roll number of the student.
+        - course_type: The type of course the student is looking for.
+        - user_preferences: The user's preferences for course features.
+        - feature_labels: The labels of the course features.
+        """
+        
         course_type = int(input('What type of course are you looking for?\n [1 : Science, 2 : Mathematics, 3 : Electrical Engineering, 4 : Humanities, 5 : Computer Science]: '))
         categories = ['SC', 'MA', 'EE', 'HU', 'CS']
         course_type = categories[course_type-1]
