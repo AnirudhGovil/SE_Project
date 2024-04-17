@@ -41,6 +41,20 @@ for student in students_rolls:
     student_courses = np.random.choice(course_ids, num_courses, replace=False)
     students[student] = student_courses
 
+# Ensure that no student has taken the same course twice
+for student in students:
+    students[student] = list(set(students[student]))  
+
+# Ensure that no student has taken both the 22 and 23 versions of the same course
+for student in students:
+    for course in students[student]:
+        if course[-2:] == '22':
+            if course[:-2]+'23' in students[student]:
+                students[student].remove(course[:-2]+'23')
+        if course[-2:] == '23':
+            if course[:-2]+'22' in students[student]:
+                students[student].remove(course[:-2]+'22')        
+
 # We will now generate feedback forms for each student
 course_feedback_forms = {}
 # Each feedback form will be indexed by the student's roll number + course id
@@ -55,13 +69,13 @@ for student in students:
         eta = np.random.randint(1,11)
         course_feedback_forms[student][course] = {
             'How would you rate the difficulty of the course?': alpha,
-            'How would you rate the extent of time commitment required for the course?': int(((alpha + np.random.randint(-1, 2))/11)*10),
+            'How would you rate the extent of time commitment required for the course?': int(((alpha + np.random.randint(-1, 2))/11)*9)+1,
+            'How much would you say you learned from the course?': eta,
             'How well do you think the course was structured?': beta,
             'How would you rate the quality of the course material?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
             'How would you rate the quality of the assignments?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
             'How would you rate the quality of the exams?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
             'How well did the course align with your expectations?': gamma,
-            'How much would you say you learned from the course?': eta,
             'How likely are you to recommend this course to your juniors?': int(((beta - alpha + gamma + eta)/40)*9)+1,
             courses[course]['Questions'][0]: int(((delta + np.random.randint(-1, 2))/11)*9)+1,
             courses[course]['Questions'][1]: int(((delta + np.random.randint(-1, 2))/11)*9)+1,
@@ -78,6 +92,23 @@ for student in course_feedback_forms:
             'Student': student,
             'Feedback': course_feedback_forms[student][course]
         })
+
+# Since we used random numbers to generate the feedback forms, all courses once aggregated will have similar features
+# To force the courses to have different features, we will add a random number to the features of each course
+
+for course in course_feedback_forms_by_course:
+    offset = np.random.randint(0, 10)
+    for feedback in course_feedback_forms_by_course[course]:
+        for key in feedback['Feedback']:
+            feedback['Feedback'][key] += offset
+            # Normalize the feedback to be between 1 and 10 by dividing by 12 and multiplying by 10
+            feedback['Feedback'][key] = int((feedback['Feedback'][key]/20)*9)+1
+
+# Make sure the changes are reflected in the course_feedback_forms dictionary
+for course in course_feedback_forms_by_course:
+    for feedback in course_feedback_forms_by_course[course]:
+        course_feedback_forms[feedback['Student']][course] = feedback['Feedback']
+
 
 # Save the feedback forms by course to a json file
 with open('course_feedback_forms_by_course.json', 'w') as f:
