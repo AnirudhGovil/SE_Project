@@ -52,6 +52,7 @@ for student in students:
         beta = np.random.randint(1,11)
         gamma = np.random.randint(1,11)
         delta = np.random.randint(1,11)
+        eta = np.random.randint(1,11)
         course_feedback_forms[student][course] = {
             'How would you rate the difficulty of the course?': alpha,
             'How would you rate the extent of time commitment required for the course?': int(((alpha + np.random.randint(-1, 2))/11)*10),
@@ -60,7 +61,8 @@ for student in students:
             'How would you rate the quality of the assignments?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
             'How would you rate the quality of the exams?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
             'How well did the course align with your expectations?': gamma,
-            'How likely are you to this course to your juniors?': int(((beta - alpha + gamma)/30)*9)+1,
+            'How much would you say you learned from the course?': eta,
+            'How likely are you to recommend this course to your juniors?': int(((beta - alpha + gamma + eta)/40)*9)+1,
             courses[course]['Questions'][0]: int(((delta + np.random.randint(-1, 2))/11)*9)+1,
             courses[course]['Questions'][1]: int(((delta + np.random.randint(-1, 2))/11)*9)+1,
             courses[course]['Questions'][2]: int(((delta + np.random.randint(-1, 2))/11)*9+1)
@@ -101,3 +103,5 @@ for student in students:
 # Save the students dictionary to a json file
 with open('students.json', 'w') as f:
     json.dump(students_dict, f, indent=4)
+
+    

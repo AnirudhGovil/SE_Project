@@ -1,6 +1,287 @@
 [
     {
         "Year": 22,
+        "Index": 10,
+        "Category": "MA",
+        "Credits Worth": 4,
+        "ID": "MA22104",
+        "Name": "Introduction to Linear Algebra",
+        "Questions": [
+            "How well did the course cover fundamental concepts of linear algebra such as vectors, matrices, and systems of equations?",
+            "To what extent did the course provide insights into linear transformations, eigenvalues, and eigenvectors?",
+            "How useful were the assignments and applications in understanding linear algebra in various fields?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 1,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22013",
+        "Name": "Calculus I",
+        "Questions": [
+            "How well did the course cover fundamental concepts of calculus such as limits, derivatives, and integrals?",
+            "To what extent did the course provide insights into applications of calculus in real-world problems?",
+            "How useful were the assignments and problem-solving exercises in understanding calculus?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 2,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22023",
+        "Name": "Calculus II",
+        "Questions": [
+            "How well did the course cover advanced topics in calculus such as techniques of integration and infinite series?",
+            "To what extent did the course provide insights into applications of calculus in physics and engineering?",
+            "How useful were the assignments and problem-solving exercises in mastering advanced calculus concepts?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 3,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22033",
+        "Name": "Multivariable Calculus",
+        "Questions": [
+            "How well did the course cover topics such as partial derivatives, multiple integrals, and vector calculus?",
+            "To what extent did the course provide insights into applications of multivariable calculus in optimization and physics?",
+            "How useful were the assignments and problem-solving exercises in understanding multivariable calculus concepts?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 4,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22043",
+        "Name": "Differential Equations",
+        "Questions": [
+            "How well did the course cover topics such as first-order differential equations, second-order differential equations, and systems of differential equations?",
+            "To what extent did the course provide insights into applications of differential equations in modeling real-world phenomena?",
+            "How useful were the assignments and problem-solving exercises in mastering differential equations concepts?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 5,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22053",
+        "Name": "Discrete Mathematics",
+        "Questions": [
+            "How well did the course cover topics such as logic, sets, functions, and combinatorics?",
+            "To what extent did the course provide insights into applications of discrete mathematics in computer science and cryptography?",
+            "How useful were the assignments and problem-solving exercises in understanding discrete mathematics concepts?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 6,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22063",
+        "Name": "Probability and Statistics",
+        "Questions": [
+            "How well did the course cover topics such as probability theory, random variables, and statistical inference?",
+            "To what extent did the course provide insights into applications of probability and statistics in data analysis and decision-making?",
+            "How useful were the assignments and data analysis projects in understanding probability and statistics concepts?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 7,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22073",
+        "Name": "Numerical Methods",
+        "Questions": [
+            "How well did the course cover topics such as numerical approximation, interpolation, and numerical integration?",
+            "To what extent did the course provide insights into applications of numerical methods in solving mathematical problems?",
+            "How useful were the assignments and programming projects in implementing numerical algorithms?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 8,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22083",
+        "Name": "Mathematical Modeling",
+        "Questions": [
+            "How well did the course cover topics such as mathematical modeling techniques, optimization, and simulation?",
+            "To what extent did the course provide insights into applications of mathematical modeling in various fields?",
+            "How useful were the assignments and modeling projects in developing mathematical models?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 9,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA22093",
+        "Name": "Mathematical Logic",
+        "Questions": [
+            "How well did the course cover topics such as propositional logic, predicate logic, and formal proof techniques?",
+            "To what extent did the course provide insights into applications of mathematical logic in computer science and philosophy?",
+            "How useful were the assignments and logical reasoning exercises in understanding mathematical logic concepts?"
+        ]
+    },
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+        "Year": 23,
+        "Index": 10,
+        "Category": "MA",
+        "Credits Worth": 4,
+        "ID": "MA23104",
+        "Name": "Introduction to Linear Algebra",
+        "Questions": [
+            "How well did the course cover fundamental concepts of linear algebra such as vectors, matrices, and systems of equations?",
+            "To what extent did the course provide insights into linear transformations, eigenvalues, and eigenvectors?",
+            "How useful were the assignments and applications in understanding linear algebra in various fields?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 1,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23013",
+        "Name": "Calculus I",
+        "Questions": [
+            "How well did the course cover fundamental concepts of calculus such as limits, derivatives, and integrals?",
+            "To what extent did the course provide insights into applications of calculus in real-world problems?",
+            "How useful were the assignments and problem-solving exercises in understanding calculus?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 2,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23023",
+        "Name": "Calculus II",
+        "Questions": [
+            "How well did the course cover advanced topics in calculus such as techniques of integration and infinite series?",
+            "To what extent did the course provide insights into applications of calculus in physics and engineering?",
+            "How useful were the assignments and problem-solving exercises in mastering advanced calculus concepts?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 3,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23033",
+        "Name": "Multivariable Calculus",
+        "Questions": [
+            "How well did the course cover topics such as partial derivatives, multiple integrals, and vector calculus?",
+            "To what extent did the course provide insights into applications of multivariable calculus in optimization and physics?",
+            "How useful were the assignments and problem-solving exercises in understanding multivariable calculus concepts?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 4,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23043",
+        "Name": "Differential Equations",
+        "Questions": [
+            "How well did the course cover topics such as first-order differential equations, second-order differential equations, and systems of differential equations?",
+            "To what extent did the course provide insights into applications of differential equations in modeling real-world phenomena?",
+            "How useful were the assignments and problem-solving exercises in mastering differential equations concepts?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 5,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23053",
+        "Name": "Discrete Mathematics",
+        "Questions": [
+            "How well did the course cover topics such as logic, sets, functions, and combinatorics?",
+            "To what extent did the course provide insights into applications of discrete mathematics in computer science and cryptography?",
+            "How useful were the assignments and problem-solving exercises in understanding discrete mathematics concepts?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 6,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23063",
+        "Name": "Probability and Statistics",
+        "Questions": [
+            "How well did the course cover topics such as probability theory, random variables, and statistical inference?",
+            "To what extent did the course provide insights into applications of probability and statistics in data analysis and decision-making?",
+            "How useful were the assignments and data analysis projects in understanding probability and statistics concepts?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 7,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23073",
+        "Name": "Numerical Methods",
+        "Questions": [
+            "How well did the course cover topics such as numerical approximation, interpolation, and numerical integration?",
+            "To what extent did the course provide insights into applications of numerical methods in solving mathematical problems?",
+            "How useful were the assignments and programming projects in implementing numerical algorithms?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 8,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23083",
+        "Name": "Mathematical Modeling",
+        "Questions": [
+            "How well did the course cover topics such as mathematical modeling techniques, optimization, and simulation?",
+            "To what extent did the course provide insights into applications of mathematical modeling in various fields?",
+            "How useful were the assignments and modeling projects in developing mathematical models?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 9,
+        "Category": "MA",
+        "Credits Worth": 3,
+        "ID": "MA23093",
+        "Name": "Mathematical Logic",
+        "Questions": [
+            "How well did the course cover topics such as propositional logic, predicate logic, and formal proof techniques?",
+            "To what extent did the course provide insights into applications of mathematical logic in computer science and philosophy?",
+            "How useful were the assignments and logical reasoning exercises in understanding mathematical logic concepts?"
+        ]
+    },
+    {
+        "Year": 22,
         "Index": 1,
         "Category": "SC",
         "Credits Worth": 3,
