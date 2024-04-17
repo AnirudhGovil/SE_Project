@@ -1,0 +1,1562 @@
+[
+    {
+        "Year": 22,
+        "Index": 1,
+        "Category": "SC",
+        "Credits Worth": 3,
+        "ID": "SC22013",
+        "Name": "Introduction to Physics",
+        "Questions": [
+            "How well did the course clarify fundamental concepts like mechanics, electromagnetism, and thermodynamics?",
+            "To what extent did the course enhance your problem-solving skills in physics?",
+            "How effective was the course in demonstrating real-world applications of physics principles?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 2,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22024",
+        "Name": "Data Structures and Algorithms",
+        "Questions": [
+            "How proficient do you feel in implementing common data structures such as arrays, linked lists, and trees?",
+            "How effectively did the course cover various algorithmic paradigms such as sorting, searching, and dynamic programming?",
+            "To what extent did the course prepare you for solving complex coding challenges and interview questions?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 3,
+        "Category": "EE",
+        "Credits Worth": 5,
+        "ID": "EE22035",
+        "Name": "Circuit Analysis",
+        "Questions": [
+            "How well did the course explain basic circuit laws and analysis techniques such as Ohm's law and Kirchhoff's laws?",
+            "How confident are you in analyzing complex circuits using techniques like mesh analysis and nodal analysis?",
+            "How useful was the course in applying circuit analysis principles to real-world electrical systems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 4,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU22042",
+        "Name": "Introduction to Literature",
+        "Questions": [
+            "How effectively did the course explore different literary genres and styles?",
+            "To what extent did the course deepen your understanding of literary themes, motifs, and symbols?",
+            "How engaging were the discussions and interpretations of literary works throughout the course?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 5,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC22052",
+        "Name": "Basics of Chemistry",
+        "Questions": [
+            "How well did the course explain fundamental concepts such as atomic structure, chemical bonding, and stoichiometry?",
+            "How effective were the laboratory sessions in reinforcing theoretical concepts through hands-on experiments?",
+            "How engaging were the demonstrations and applications of chemistry in everyday life?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 6,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22063",
+        "Name": "Programming Fundamentals",
+        "Questions": [
+            "How well did the course introduce basic programming concepts such as variables, control structures, and functions?",
+            "How confident are you in applying programming logic to solve simple computational problems?",
+            "How useful were the programming assignments in reinforcing theoretical concepts and improving coding skills?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 7,
+        "Category": "EE",
+        "Credits Worth": 4,
+        "ID": "EE22074",
+        "Name": "Digital Signal Processing",
+        "Questions": [
+            "How well did the course cover fundamental concepts of digital signal processing such as sampling, filtering, and modulation?",
+            "How proficient are you in applying DSP techniques to analyze and process real-world signals?",
+            "How useful were the practical applications and simulations in reinforcing theoretical concepts?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 8,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU22082",
+        "Name": "Philosophy of Ethics",
+        "Questions": [
+            "How effectively did the course explore different ethical theories and frameworks?",
+            "To what extent did the course encourage critical thinking and ethical reasoning?",
+            "How engaging were the discussions and debates on ethical dilemmas and real-world issues?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 9,
+        "Category": "SC",
+        "Credits Worth": 5,
+        "ID": "SC22095",
+        "Name": "Quantum Mechanics",
+        "Questions": [
+            "How well did the course explain the fundamental principles and postulates of quantum mechanics?",
+            "How confident are you in applying quantum mechanical concepts to solve problems in quantum systems?",
+            "How engaging were the discussions on the interpretation and implications of quantum theory?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 10,
+        "Category": "CS",
+        "Credits Worth": 2,
+        "ID": "CS22102",
+        "Name": "Introduction to Databases",
+        "Questions": [
+            "How well did the course cover fundamental concepts of database management such as relational models and query languages?",
+            "To what extent did the course provide hands-on experience with database design, implementation, and querying?",
+            "How useful were the case studies and projects in applying database concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 11,
+        "Category": "SC",
+        "Credits Worth": 4,
+        "ID": "SC22114",
+        "Name": "Genetics and Evolution",
+        "Questions": [
+            "How well did the course cover basic principles of genetics such as inheritance, mutation, and genetic variation?",
+            "To what extent did the course explore evolutionary mechanisms such as natural selection, genetic drift, and speciation?",
+            "How engaging were the discussions on current research and controversies in genetics and evolutionary biology?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 12,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22125",
+        "Name": "Machine Learning Fundamentals",
+        "Questions": [
+            "How well did the course cover fundamental machine learning concepts such as supervised learning, unsupervised learning, and reinforcement learning?",
+            "To what extent did the course provide practical experience with machine learning algorithms and techniques?",
+            "How useful were the case studies and projects in applying machine learning to real-world datasets?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 13,
+        "Category": "EE",
+        "Credits Worth": 3,
+        "ID": "EE22133",
+        "Name": "Introduction to Electronics",
+        "Questions": [
+            "How well did the course cover fundamental electronic components and circuits such as diodes, transistors, and amplifiers?",
+            "To what extent did the course provide hands-on experience with electronic circuit design, analysis, and troubleshooting?",
+            "How useful were the laboratory experiments in reinforcing theoretical concepts and practical skills?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 14,
+        "Category": "HU",
+        "Credits Worth": 4,
+        "ID": "HU22144",
+        "Name": "History of Art",
+        "Questions": [
+            "How effectively did the course cover major art movements, styles, and artists throughout history?",
+            "To what extent did the course deepen your understanding of the cultural and historical contexts of artworks?",
+            "How engaging were the visual analyses and discussions of art objects and monuments?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 15,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC22152",
+        "Name": "Introduction to Geology",
+        "Questions": [
+            "How well did the course introduce basic geological concepts such as rock types, geological processes, and plate tectonics?",
+            "To what extent did the course explore the geological history and formation of Earth's landscapes?",
+            "How useful were the field trips and hands-on activities in understanding geological phenomena?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 16,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22163",
+        "Name": "Web Development Basics",
+        "Questions": [
+            "How well did the course cover fundamental web technologies such as HTML, CSS, and JavaScript?",
+            "To what extent did the course provide practical experience with building and deploying web applications?",
+            "How useful were the assignments and projects in applying web development concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 17,
+        "Category": "EE",
+        "Credits Worth": 5,
+        "ID": "EE22174",
+        "Name": "Power Systems Analysis",
+        "Questions": [
+            "How well did the course cover fundamental concepts of power generation, transmission, and distribution?",
+            "To what extent did the course provide analytical tools and techniques for modeling and analyzing power systems?",
+            "How useful were the case studies and simulations in understanding real-world power system operation and control?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 18,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU22182",
+        "Name": "Introduction to Psychology",
+        "Questions": [
+            "How effectively did the course cover major theories and concepts in psychology such as behaviorism, cognitive psychology, and psychoanalysis?",
+            "To what extent did the course provide insights into human behavior, cognition, and emotion?",
+            "How engaging were the discussions and activities in applying psychological theories to real-life situations?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 19,
+        "Category": "SC",
+        "Credits Worth": 4,
+        "ID": "SC22194",
+        "Name": "Astronomy and Astrophysics",
+        "Questions": [
+            "How well did the course cover basic astronomical phenomena such as celestial mechanics, stellar evolution, and cosmology?",
+            "To what extent did the course explore modern observational techniques and instruments used in astronomy?",
+            "How engaging were the discussions on current astronomical discoveries and mysteries of the universe?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 20,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22205",
+        "Name": "Introduction to Operating Systems",
+        "Questions": [
+            "How well did the course cover fundamental concepts of operating system architecture, processes, and memory management?",
+            "To what extent did the course provide practical experience with system programming and kernel-level operations?",
+            "How useful were the assignments and projects in understanding the design and implementation of operating systems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 21,
+        "Category": "HU",
+        "Credits Worth": 3,
+        "ID": "HU22216",
+        "Name": "Introduction to Ethics in Technology",
+        "Questions": [
+            "How effectively did the course explore ethical issues related to technology such as privacy, surveillance, and artificial intelligence?",
+            "To what extent did the course encourage critical thinking and ethical decision-making in technological contexts?",
+            "How engaging were the discussions and case studies on ethical dilemmas and emerging technologies?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 22,
+        "Category": "SC",
+        "Credits Worth": 3,
+        "ID": "SC22227",
+        "Name": "Environmental Science",
+        "Questions": [
+            "How well did the course cover basic environmental concepts such as ecosystems, biodiversity, and sustainability?",
+            "To what extent did the course explore human impacts on the environment and strategies for environmental conservation?",
+            "How useful were the field studies and projects in understanding environmental issues and solutions?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 23,
+        "Category": "EE",
+        "Credits Worth": 4,
+        "ID": "EE22238",
+        "Name": "Renewable Energy Systems",
+        "Questions": [
+            "How well did the course cover various renewable energy sources such as solar, wind, and hydroelectric power?",
+            "To what extent did the course explore renewable energy technologies, systems integration, and energy storage?",
+            "How useful were the case studies and projects in analyzing and designing renewable energy systems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 24,
+        "Category": "HU",
+        "Credits Worth": 5,
+        "ID": "HU22249",
+        "Name": "Literature and Culture",
+        "Questions": [
+            "How effectively did the course explore the interplay between literature and cultural contexts?",
+            "To what extent did the course deepen your understanding of cultural diversity and representation in literature?",
+            "How engaging were the discussions and analyses of literary texts within broader cultural frameworks?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 25,
+        "Category": "SC",
+        "Credits Worth": 5,
+        "ID": "SC22250",
+        "Name": "Neuroscience",
+        "Questions": [
+            "How well did the course cover fundamental concepts of neuroscience such as neuroanatomy, neurophysiology, and brain function?",
+            "To what extent did the course explore modern techniques and methodologies used in neuroscience research?",
+            "How engaging were the discussions on current advances and debates in the field of neuroscience?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 26,
+        "Category": "CS",
+        "Credits Worth": 2,
+        "ID": "CS22261",
+        "Name": "Introduction to Algorithms",
+        "Questions": [
+            "How well did the course cover fundamental algorithms and algorithmic techniques such as sorting, searching, and graph algorithms?",
+            "To what extent did the course provide insights into algorithm analysis and complexity theory?",
+            "How useful were the assignments and problem sets in applying algorithmic concepts to solve computational problems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 27,
+        "Category": "HU",
+        "Credits Worth": 4,
+        "ID": "HU22272",
+        "Name": "Modern Philosophy",
+        "Questions": [
+            "How effectively did the course cover major philosophical movements and thinkers of the modern period?",
+            "To what extent did the course deepen your understanding of key philosophical concepts and debates?",
+            "How engaging were the discussions and analyses of philosophical texts and arguments?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 28,
+        "Category": "EE",
+        "Credits Worth": 3,
+        "ID": "EE22283",
+        "Name": "Embedded Systems Design",
+        "Questions": [
+            "How well did the course cover fundamental concepts of embedded systems such as microcontrollers, sensors, and actuators?",
+            "To what extent did the course provide hands-on experience with embedded system design, programming, and interfacing?",
+            "How useful were the laboratory projects and simulations in reinforcing theoretical concepts and practical skills?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 29,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC22294",
+        "Name": "Introduction to Oceanography",
+        "Questions": [
+            "How well did the course cover basic oceanographic principles such as ocean currents, marine ecosystems, and coastal processes?",
+            "To what extent did the course explore human impacts on the oceans and marine conservation?",
+            "How useful were the field studies and hands-on activities in understanding oceanographic phenomena?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 30,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22305",
+        "Name": "Artificial Intelligence",
+        "Questions": [
+            "How well did the course cover fundamental concepts of artificial intelligence such as search algorithms, knowledge representation, and machine learning?",
+            "To what extent did the course provide practical experience with AI techniques and applications?",
+            "How useful were the case studies and projects in applying AI to real-world problems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 31,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22316",
+        "Name": "Database Systems",
+        "Questions": [
+            "How well did the course cover fundamental concepts of database management such as relational models and query languages?",
+            "To what extent did the course provide hands-on experience with database design, implementation, and querying?",
+            "How useful were the case studies and projects in applying database concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 32,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22327",
+        "Name": "Computer Networks",
+        "Questions": [
+            "How well did the course cover fundamental concepts of computer networking such as protocols, routing, and switching?",
+            "To what extent did the course provide practical experience with network configuration, troubleshooting, and security?",
+            "How useful were the laboratory exercises and simulations in understanding network technologies and protocols?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 33,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22338",
+        "Name": "Software Engineering",
+        "Questions": [
+            "How well did the course cover software development lifecycle models and methodologies?",
+            "To what extent did the course provide practical experience with software design, implementation, and testing?",
+            "How useful were the team projects and software engineering tools in preparing you for real-world software development?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 34,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22349",
+        "Name": "Information Security",
+        "Questions": [
+            "How well did the course cover fundamental principles of information security such as cryptography, authentication, and access control?",
+            "To what extent did the course explore common security threats and vulnerabilities in computer systems and networks?",
+            "How useful were the hands-on exercises and case studies in understanding and mitigating security risks?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 35,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22350",
+        "Name": "Big Data Analytics",
+        "Questions": [
+            "How well did the course cover fundamental concepts of big data analytics such as data preprocessing, analysis, and visualization?",
+            "To what extent did the course provide practical experience with big data tools and technologies?",
+            "How useful were the case studies and projects in analyzing and deriving insights from large-scale datasets?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 36,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22361",
+        "Name": "Cloud Computing",
+        "Questions": [
+            "How well did the course cover fundamental concepts of cloud computing such as virtualization, scalability, and service models?",
+            "To what extent did the course provide practical experience with cloud platforms and services?",
+            "How useful were the assignments and projects in deploying and managing applications on the cloud?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 37,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22372",
+        "Name": "Mobile Application Development",
+        "Questions": [
+            "How well did the course cover fundamental concepts of mobile app development such as UI design, navigation, and data management?",
+            "To what extent did the course provide practical experience with mobile development frameworks and tools?",
+            "How useful were the app development projects in applying mobile design principles and best practices?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 38,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22383",
+        "Name": "Natural Language Processing",
+        "Questions": [
+            "How well did the course cover fundamental techniques of natural language processing such as tokenization, parsing, and sentiment analysis?",
+            "To what extent did the course provide practical experience with NLP libraries and applications?",
+            "How useful were the projects and research papers in exploring advanced topics in NLP?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 39,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22394",
+        "Name": "Computer Vision",
+        "Questions": [
+            "How well did the course cover fundamental concepts of computer vision such as image processing, feature extraction, and object recognition?",
+            "To what extent did the course provide practical experience with CV algorithms and techniques?",
+            "How useful were the projects and case studies in applying computer vision to real-world problems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 40,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22405",
+        "Name": "Human-Computer Interaction",
+        "Questions": [
+            "How well did the course cover fundamental principles of human-computer interaction such as usability, accessibility, and user experience design?",
+            "To what extent did the course provide practical experience with HCI research methods and usability testing?",
+            "How useful were the design projects and user studies in evaluating and improving interactive systems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 1,
+        "Category": "SC",
+        "Credits Worth": 3,
+        "ID": "SC22013",
+        "Name": "Introduction to Physics",
+        "Questions": [
+            "How well did the course clarify fundamental concepts like mechanics, electromagnetism, and thermodynamics?",
+            "To what extent did the course enhance your problem-solving skills in physics?",
+            "How effective was the course in demonstrating real-world applications of physics principles?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 2,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22024",
+        "Name": "Data Structures and Algorithms",
+        "Questions": [
+            "How proficient do you feel in implementing common data structures such as arrays, linked lists, and trees?",
+            "How effectively did the course cover various algorithmic paradigms such as sorting, searching, and dynamic programming?",
+            "To what extent did the course prepare you for solving complex coding challenges and interview questions?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 3,
+        "Category": "EE",
+        "Credits Worth": 5,
+        "ID": "EE22035",
+        "Name": "Circuit Analysis",
+        "Questions": [
+            "How well did the course explain basic circuit laws and analysis techniques such as Ohm's law and Kirchhoff's laws?",
+            "How confident are you in analyzing complex circuits using techniques like mesh analysis and nodal analysis?",
+            "How useful was the course in applying circuit analysis principles to real-world electrical systems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 4,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU22042",
+        "Name": "Introduction to Literature",
+        "Questions": [
+            "How effectively did the course explore different literary genres and styles?",
+            "To what extent did the course deepen your understanding of literary themes, motifs, and symbols?",
+            "How engaging were the discussions and interpretations of literary works throughout the course?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 5,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC22052",
+        "Name": "Basics of Chemistry",
+        "Questions": [
+            "How well did the course explain fundamental concepts such as atomic structure, chemical bonding, and stoichiometry?",
+            "How effective were the laboratory sessions in reinforcing theoretical concepts through hands-on experiments?",
+            "How engaging were the demonstrations and applications of chemistry in everyday life?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 6,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22063",
+        "Name": "Programming Fundamentals",
+        "Questions": [
+            "How well did the course introduce basic programming concepts such as variables, control structures, and functions?",
+            "How confident are you in applying programming logic to solve simple computational problems?",
+            "How useful were the programming assignments in reinforcing theoretical concepts and improving coding skills?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 7,
+        "Category": "EE",
+        "Credits Worth": 4,
+        "ID": "EE22074",
+        "Name": "Digital Signal Processing",
+        "Questions": [
+            "How well did the course cover fundamental concepts of digital signal processing such as sampling, filtering, and modulation?",
+            "How proficient are you in applying DSP techniques to analyze and process real-world signals?",
+            "How useful were the practical applications and simulations in reinforcing theoretical concepts?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 8,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU22082",
+        "Name": "Philosophy of Ethics",
+        "Questions": [
+            "How effectively did the course explore different ethical theories and frameworks?",
+            "To what extent did the course encourage critical thinking and ethical reasoning?",
+            "How engaging were the discussions and debates on ethical dilemmas and real-world issues?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 9,
+        "Category": "SC",
+        "Credits Worth": 5,
+        "ID": "SC22095",
+        "Name": "Quantum Mechanics",
+        "Questions": [
+            "How well did the course explain the fundamental principles and postulates of quantum mechanics?",
+            "How confident are you in applying quantum mechanical concepts to solve problems in quantum systems?",
+            "How engaging were the discussions on the interpretation and implications of quantum theory?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 10,
+        "Category": "CS",
+        "Credits Worth": 2,
+        "ID": "CS22102",
+        "Name": "Introduction to Databases",
+        "Questions": [
+            "How well did the course cover fundamental concepts of database management such as relational models and query languages?",
+            "To what extent did the course provide hands-on experience with database design, implementation, and querying?",
+            "How useful were the case studies and projects in applying database concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 11,
+        "Category": "SC",
+        "Credits Worth": 4,
+        "ID": "SC22114",
+        "Name": "Genetics and Evolution",
+        "Questions": [
+            "How well did the course cover basic principles of genetics such as inheritance, mutation, and genetic variation?",
+            "To what extent did the course explore evolutionary mechanisms such as natural selection, genetic drift, and speciation?",
+            "How engaging were the discussions on current research and controversies in genetics and evolutionary biology?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 12,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22125",
+        "Name": "Machine Learning Fundamentals",
+        "Questions": [
+            "How well did the course cover fundamental machine learning concepts such as supervised learning, unsupervised learning, and reinforcement learning?",
+            "To what extent did the course provide practical experience with machine learning algorithms and techniques?",
+            "How useful were the case studies and projects in applying machine learning to real-world datasets?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 13,
+        "Category": "EE",
+        "Credits Worth": 3,
+        "ID": "EE22133",
+        "Name": "Introduction to Electronics",
+        "Questions": [
+            "How well did the course cover fundamental electronic components and circuits such as diodes, transistors, and amplifiers?",
+            "To what extent did the course provide hands-on experience with electronic circuit design, analysis, and troubleshooting?",
+            "How useful were the laboratory experiments in reinforcing theoretical concepts and practical skills?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 14,
+        "Category": "HU",
+        "Credits Worth": 4,
+        "ID": "HU22144",
+        "Name": "History of Art",
+        "Questions": [
+            "How effectively did the course cover major art movements, styles, and artists throughout history?",
+            "To what extent did the course deepen your understanding of the cultural and historical contexts of artworks?",
+            "How engaging were the visual analyses and discussions of art objects and monuments?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 15,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC22152",
+        "Name": "Introduction to Geology",
+        "Questions": [
+            "How well did the course introduce basic geological concepts such as rock types, geological processes, and plate tectonics?",
+            "To what extent did the course explore the geological history and formation of Earth's landscapes?",
+            "How useful were the field trips and hands-on activities in understanding geological phenomena?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 16,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22163",
+        "Name": "Web Development Basics",
+        "Questions": [
+            "How well did the course cover fundamental web technologies such as HTML, CSS, and JavaScript?",
+            "To what extent did the course provide practical experience with building and deploying web applications?",
+            "How useful were the assignments and projects in applying web development concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 17,
+        "Category": "EE",
+        "Credits Worth": 5,
+        "ID": "EE22174",
+        "Name": "Power Systems Analysis",
+        "Questions": [
+            "How well did the course cover fundamental concepts of power generation, transmission, and distribution?",
+            "To what extent did the course provide analytical tools and techniques for modeling and analyzing power systems?",
+            "How useful were the case studies and simulations in understanding real-world power system operation and control?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 18,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU22182",
+        "Name": "Introduction to Psychology",
+        "Questions": [
+            "How effectively did the course cover major theories and concepts in psychology such as behaviorism, cognitive psychology, and psychoanalysis?",
+            "To what extent did the course provide insights into human behavior, cognition, and emotion?",
+            "How engaging were the discussions and activities in applying psychological theories to real-life situations?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 19,
+        "Category": "SC",
+        "Credits Worth": 4,
+        "ID": "SC22194",
+        "Name": "Astronomy and Astrophysics",
+        "Questions": [
+            "How well did the course cover basic astronomical phenomena such as celestial mechanics, stellar evolution, and cosmology?",
+            "To what extent did the course explore modern observational techniques and instruments used in astronomy?",
+            "How engaging were the discussions on current astronomical discoveries and mysteries of the universe?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 20,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22205",
+        "Name": "Introduction to Operating Systems",
+        "Questions": [
+            "How well did the course cover fundamental concepts of operating system architecture, processes, and memory management?",
+            "To what extent did the course provide practical experience with system programming and kernel-level operations?",
+            "How useful were the assignments and projects in understanding the design and implementation of operating systems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 21,
+        "Category": "HU",
+        "Credits Worth": 3,
+        "ID": "HU22216",
+        "Name": "Introduction to Ethics in Technology",
+        "Questions": [
+            "How effectively did the course explore ethical issues related to technology such as privacy, surveillance, and artificial intelligence?",
+            "To what extent did the course encourage critical thinking and ethical decision-making in technological contexts?",
+            "How engaging were the discussions and case studies on ethical dilemmas and emerging technologies?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 22,
+        "Category": "SC",
+        "Credits Worth": 3,
+        "ID": "SC22227",
+        "Name": "Environmental Science",
+        "Questions": [
+            "How well did the course cover basic environmental concepts such as ecosystems, biodiversity, and sustainability?",
+            "To what extent did the course explore human impacts on the environment and strategies for environmental conservation?",
+            "How useful were the field studies and projects in understanding environmental issues and solutions?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 23,
+        "Category": "EE",
+        "Credits Worth": 4,
+        "ID": "EE22238",
+        "Name": "Renewable Energy Systems",
+        "Questions": [
+            "How well did the course cover various renewable energy sources such as solar, wind, and hydroelectric power?",
+            "To what extent did the course explore renewable energy technologies, systems integration, and energy storage?",
+            "How useful were the case studies and projects in analyzing and designing renewable energy systems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 24,
+        "Category": "HU",
+        "Credits Worth": 5,
+        "ID": "HU22249",
+        "Name": "Literature and Culture",
+        "Questions": [
+            "How effectively did the course explore the interplay between literature and cultural contexts?",
+            "To what extent did the course deepen your understanding of cultural diversity and representation in literature?",
+            "How engaging were the discussions and analyses of literary texts within broader cultural frameworks?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 25,
+        "Category": "SC",
+        "Credits Worth": 5,
+        "ID": "SC22250",
+        "Name": "Neuroscience",
+        "Questions": [
+            "How well did the course cover fundamental concepts of neuroscience such as neuroanatomy, neurophysiology, and brain function?",
+            "To what extent did the course explore modern techniques and methodologies used in neuroscience research?",
+            "How engaging were the discussions on current advances and debates in the field of neuroscience?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 26,
+        "Category": "CS",
+        "Credits Worth": 2,
+        "ID": "CS22261",
+        "Name": "Introduction to Algorithms",
+        "Questions": [
+            "How well did the course cover fundamental algorithms and algorithmic techniques such as sorting, searching, and graph algorithms?",
+            "To what extent did the course provide insights into algorithm analysis and complexity theory?",
+            "How useful were the assignments and problem sets in applying algorithmic concepts to solve computational problems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 27,
+        "Category": "HU",
+        "Credits Worth": 4,
+        "ID": "HU22272",
+        "Name": "Modern Philosophy",
+        "Questions": [
+            "How effectively did the course cover major philosophical movements and thinkers of the modern period?",
+            "To what extent did the course deepen your understanding of key philosophical concepts and debates?",
+            "How engaging were the discussions and analyses of philosophical texts and arguments?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 28,
+        "Category": "EE",
+        "Credits Worth": 3,
+        "ID": "EE22283",
+        "Name": "Embedded Systems Design",
+        "Questions": [
+            "How well did the course cover fundamental concepts of embedded systems such as microcontrollers, sensors, and actuators?",
+            "To what extent did the course provide hands-on experience with embedded system design, programming, and interfacing?",
+            "How useful were the laboratory projects and simulations in reinforcing theoretical concepts and practical skills?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 29,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC22294",
+        "Name": "Introduction to Oceanography",
+        "Questions": [
+            "How well did the course cover basic oceanographic principles such as ocean currents, marine ecosystems, and coastal processes?",
+            "To what extent did the course explore human impacts on the oceans and marine conservation?",
+            "How useful were the field studies and hands-on activities in understanding oceanographic phenomena?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 30,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22305",
+        "Name": "Artificial Intelligence",
+        "Questions": [
+            "How well did the course cover fundamental concepts of artificial intelligence such as search algorithms, knowledge representation, and machine learning?",
+            "To what extent did the course provide practical experience with AI techniques and applications?",
+            "How useful were the case studies and projects in applying AI to real-world problems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 31,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22316",
+        "Name": "Database Systems",
+        "Questions": [
+            "How well did the course cover fundamental concepts of database management such as relational models and query languages?",
+            "To what extent did the course provide hands-on experience with database design, implementation, and querying?",
+            "How useful were the case studies and projects in applying database concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 32,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22327",
+        "Name": "Computer Networks",
+        "Questions": [
+            "How well did the course cover fundamental concepts of computer networking such as protocols, routing, and switching?",
+            "To what extent did the course provide practical experience with network configuration, troubleshooting, and security?",
+            "How useful were the laboratory exercises and simulations in understanding network technologies and protocols?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 33,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22338",
+        "Name": "Software Engineering",
+        "Questions": [
+            "How well did the course cover software development lifecycle models and methodologies?",
+            "To what extent did the course provide practical experience with software design, implementation, and testing?",
+            "How useful were the team projects and software engineering tools in preparing you for real-world software development?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 34,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22349",
+        "Name": "Information Security",
+        "Questions": [
+            "How well did the course cover fundamental principles of information security such as cryptography, authentication, and access control?",
+            "To what extent did the course explore common security threats and vulnerabilities in computer systems and networks?",
+            "How useful were the hands-on exercises and case studies in understanding and mitigating security risks?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 35,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22350",
+        "Name": "Big Data Analytics",
+        "Questions": [
+            "How well did the course cover fundamental concepts of big data analytics such as data preprocessing, analysis, and visualization?",
+            "To what extent did the course provide practical experience with big data tools and technologies?",
+            "How useful were the case studies and projects in analyzing and deriving insights from large-scale datasets?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 36,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22361",
+        "Name": "Cloud Computing",
+        "Questions": [
+            "How well did the course cover fundamental concepts of cloud computing such as virtualization, scalability, and service models?",
+            "To what extent did the course provide practical experience with cloud platforms and services?",
+            "How useful were the assignments and projects in deploying and managing applications on the cloud?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 37,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22372",
+        "Name": "Mobile Application Development",
+        "Questions": [
+            "How well did the course cover fundamental concepts of mobile app development such as UI design, navigation, and data management?",
+            "To what extent did the course provide practical experience with mobile development frameworks and tools?",
+            "How useful were the app development projects in applying mobile design principles and best practices?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 38,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS22383",
+        "Name": "Natural Language Processing",
+        "Questions": [
+            "How well did the course cover fundamental techniques of natural language processing such as tokenization, parsing, and sentiment analysis?",
+            "To what extent did the course provide practical experience with NLP libraries and applications?",
+            "How useful were the projects and research papers in exploring advanced topics in NLP?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 39,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS22394",
+        "Name": "Computer Vision",
+        "Questions": [
+            "How well did the course cover fundamental concepts of computer vision such as image processing, feature extraction, and object recognition?",
+            "To what extent did the course provide practical experience with CV algorithms and techniques?",
+            "How useful were the projects and case studies in applying computer vision to real-world problems?"
+        ]
+    },
+    {
+        "Year": 22,
+        "Index": 40,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS22405",
+        "Name": "Human-Computer Interaction",
+        "Questions": [
+            "How well did the course cover fundamental principles of human-computer interaction such as usability, accessibility, and user experience design?",
+            "To what extent did the course provide practical experience with HCI research methods and usability testing?",
+            "How useful were the design projects and user studies in evaluating and improving interactive systems?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 1,
+        "Category": "SC",
+        "Credits Worth": 3,
+        "ID": "SC23013",
+        "Name": "Introduction to Physics",
+        "Questions": [
+            "How well did the course clarify fundamental concepts like mechanics, electromagnetism, and thermodynamics?",
+            "To what extent did the course enhance your problem-solving skills in physics?",
+            "How effective was the course in demonstrating real-world applications of physics principles?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 2,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS23024",
+        "Name": "Data Structures and Algorithms",
+        "Questions": [
+            "How proficient do you feel in implementing common data structures such as arrays, linked lists, and trees?",
+            "How effectively did the course cover various algorithmic paradigms such as sorting, searching, and dynamic programming?",
+            "To what extent did the course prepare you for solving complex coding challenges and interview questions?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 3,
+        "Category": "EE",
+        "Credits Worth": 5,
+        "ID": "EE23035",
+        "Name": "Circuit Analysis",
+        "Questions": [
+            "How well did the course explain basic circuit laws and analysis techniques such as Ohm's law and Kirchhoff's laws?",
+            "How confident are you in analyzing complex circuits using techniques like mesh analysis and nodal analysis?",
+            "How useful was the course in applying circuit analysis principles to real-world electrical systems?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 4,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU23042",
+        "Name": "Introduction to Literature",
+        "Questions": [
+            "How effectively did the course explore different literary genres and styles?",
+            "To what extent did the course deepen your understanding of literary themes, motifs, and symbols?",
+            "How engaging were the discussions and interpretations of literary works throughout the course?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 5,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC23052",
+        "Name": "Basics of Chemistry",
+        "Questions": [
+            "How well did the course explain fundamental concepts such as atomic structure, chemical bonding, and stoichiometry?",
+            "How effective were the laboratory sessions in reinforcing theoretical concepts through hands-on experiments?",
+            "How engaging were the demonstrations and applications of chemistry in everyday life?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 6,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS23063",
+        "Name": "Programming Fundamentals",
+        "Questions": [
+            "How well did the course introduce basic programming concepts such as variables, control structures, and functions?",
+            "How confident are you in applying programming logic to solve simple computational problems?",
+            "How useful were the programming assignments in reinforcing theoretical concepts and improving coding skills?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 7,
+        "Category": "EE",
+        "Credits Worth": 4,
+        "ID": "EE23074",
+        "Name": "Digital Signal Processing",
+        "Questions": [
+            "How well did the course cover fundamental concepts of digital signal processing such as sampling, filtering, and modulation?",
+            "How proficient are you in applying DSP techniques to analyze and process real-world signals?",
+            "How useful were the practical applications and simulations in reinforcing theoretical concepts?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 8,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU23082",
+        "Name": "Philosophy of Ethics",
+        "Questions": [
+            "How effectively did the course explore different ethical theories and frameworks?",
+            "To what extent did the course encourage critical thinking and ethical reasoning?",
+            "How engaging were the discussions and debates on ethical dilemmas and real-world issues?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 9,
+        "Category": "SC",
+        "Credits Worth": 5,
+        "ID": "SC23095",
+        "Name": "Quantum Mechanics",
+        "Questions": [
+            "How well did the course explain the fundamental principles and postulates of quantum mechanics?",
+            "How confident are you in applying quantum mechanical concepts to solve problems in quantum systems?",
+            "How engaging were the discussions on the interpretation and implications of quantum theory?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 10,
+        "Category": "CS",
+        "Credits Worth": 2,
+        "ID": "CS23102",
+        "Name": "Introduction to Databases",
+        "Questions": [
+            "How well did the course cover fundamental concepts of database management such as relational models and query languages?",
+            "To what extent did the course provide hands-on experience with database design, implementation, and querying?",
+            "How useful were the case studies and projects in applying database concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 11,
+        "Category": "SC",
+        "Credits Worth": 4,
+        "ID": "SC23114",
+        "Name": "Genetics and Evolution",
+        "Questions": [
+            "How well did the course cover basic principles of genetics such as inheritance, mutation, and genetic variation?",
+            "To what extent did the course explore evolutionary mechanisms such as natural selection, genetic drift, and speciation?",
+            "How engaging were the discussions on current research and controversies in genetics and evolutionary biology?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 12,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS23125",
+        "Name": "Machine Learning Fundamentals",
+        "Questions": [
+            "How well did the course cover fundamental machine learning concepts such as supervised learning, unsupervised learning, and reinforcement learning?",
+            "To what extent did the course provide practical experience with machine learning algorithms and techniques?",
+            "How useful were the case studies and projects in applying machine learning to real-world datasets?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 13,
+        "Category": "EE",
+        "Credits Worth": 3,
+        "ID": "EE23133",
+        "Name": "Introduction to Electronics",
+        "Questions": [
+            "How well did the course cover fundamental electronic components and circuits such as diodes, transistors, and amplifiers?",
+            "To what extent did the course provide hands-on experience with electronic circuit design, analysis, and troubleshooting?",
+            "How useful were the laboratory experiments in reinforcing theoretical concepts and practical skills?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 14,
+        "Category": "HU",
+        "Credits Worth": 4,
+        "ID": "HU23144",
+        "Name": "History of Art",
+        "Questions": [
+            "How effectively did the course cover major art movements, styles, and artists throughout history?",
+            "To what extent did the course deepen your understanding of the cultural and historical contexts of artworks?",
+            "How engaging were the visual analyses and discussions of art objects and monuments?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 15,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC23152",
+        "Name": "Introduction to Geology",
+        "Questions": [
+            "How well did the course introduce basic geological concepts such as rock types, geological processes, and plate tectonics?",
+            "To what extent did the course explore the geological history and formation of Earth's landscapes?",
+            "How useful were the field trips and hands-on activities in understanding geological phenomena?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 16,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS23163",
+        "Name": "Web Development Basics",
+        "Questions": [
+            "How well did the course cover fundamental web technologies such as HTML, CSS, and JavaScript?",
+            "To what extent did the course provide practical experience with building and deploying web applications?",
+            "How useful were the assignments and projects in applying web development concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 17,
+        "Category": "EE",
+        "Credits Worth": 5,
+        "ID": "EE23174",
+        "Name": "Power Systems Analysis",
+        "Questions": [
+            "How well did the course cover fundamental concepts of power generation, transmission, and distribution?",
+            "To what extent did the course provide analytical tools and techniques for modeling and analyzing power systems?",
+            "How useful were the case studies and simulations in understanding real-world power system operation and control?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 18,
+        "Category": "HU",
+        "Credits Worth": 2,
+        "ID": "HU23182",
+        "Name": "Introduction to Psychology",
+        "Questions": [
+            "How effectively did the course cover major theories and concepts in psychology such as behaviorism, cognitive psychology, and psychoanalysis?",
+            "To what extent did the course provide insights into human behavior, cognition, and emotion?",
+            "How engaging were the discussions and activities in applying psychological theories to real-life situations?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 19,
+        "Category": "SC",
+        "Credits Worth": 4,
+        "ID": "SC23194",
+        "Name": "Astronomy and Astrophysics",
+        "Questions": [
+            "How well did the course cover basic astronomical phenomena such as celestial mechanics, stellar evolution, and cosmology?",
+            "To what extent did the course explore modern observational techniques and instruments used in astronomy?",
+            "How engaging were the discussions on current astronomical discoveries and mysteries of the universe?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 20,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS23205",
+        "Name": "Introduction to Operating Systems",
+        "Questions": [
+            "How well did the course cover fundamental concepts of operating system architecture, processes, and memory management?",
+            "To what extent did the course provide practical experience with system programming and kernel-level operations?",
+            "How useful were the assignments and projects in understanding the design and implementation of operating systems?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 21,
+        "Category": "HU",
+        "Credits Worth": 3,
+        "ID": "HU23216",
+        "Name": "Introduction to Ethics in Technology",
+        "Questions": [
+            "How effectively did the course explore ethical issues related to technology such as privacy, surveillance, and artificial intelligence?",
+            "To what extent did the course encourage critical thinking and ethical decision-making in technological contexts?",
+            "How engaging were the discussions and case studies on ethical dilemmas and emerging technologies?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 16,
+        "Category": "SC",
+        "Credits Worth": 3,
+        "ID": "SC23167",
+        "Name": "Environmental Science",
+        "Questions": [
+            "How well did the course cover basic environmental concepts such as ecosystems, biodiversity, and sustainability?",
+            "To what extent did the course explore human impacts on the environment and strategies for environmental conservation?",
+            "How useful were the field studies and projects in understanding environmental issues and solutions?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 21,
+        "Category": "EE",
+        "Credits Worth": 4,
+        "ID": "EE23218",
+        "Name": "Renewable Energy Systems",
+        "Questions": [
+            "How well did the course cover various renewable energy sources such as solar, wind, and hydroelectric power?",
+            "To what extent did the course explore renewable energy technologies, systems integration, and energy storage?",
+            "How useful were the case studies and projects in analyzing and designing renewable energy systems?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 24,
+        "Category": "HU",
+        "Credits Worth": 5,
+        "ID": "HU23249",
+        "Name": "Literature and Culture",
+        "Questions": [
+            "How effectively did the course explore the interplay between literature and cultural contexts?",
+            "To what extent did the course deepen your understanding of cultural diversity and representation in literature?",
+            "How engaging were the discussions and analyses of literary texts within broader cultural frameworks?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 25,
+        "Category": "SC",
+        "Credits Worth": 5,
+        "ID": "SC23250",
+        "Name": "Neuroscience",
+        "Questions": [
+            "How well did the course cover fundamental concepts of neuroscience such as neuroanatomy, neurophysiology, and brain function?",
+            "To what extent did the course explore modern techniques and methodologies used in neuroscience research?",
+            "How engaging were the discussions on current advances and debates in the field of neuroscience?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 26,
+        "Category": "CS",
+        "Credits Worth": 2,
+        "ID": "CS23261",
+        "Name": "Introduction to Algorithms",
+        "Questions": [
+            "How well did the course cover fundamental algorithms and algorithmic techniques such as sorting, searching, and graph algorithms?",
+            "To what extent did the course provide insights into algorithm analysis and complexity theory?",
+            "How useful were the assignments and problem sets in applying algorithmic concepts to solve computational problems?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 27,
+        "Category": "HU",
+        "Credits Worth": 4,
+        "ID": "HU23272",
+        "Name": "Modern Philosophy",
+        "Questions": [
+            "How effectively did the course cover major philosophical movements and thinkers of the modern period?",
+            "To what extent did the course deepen your understanding of key philosophical concepts and debates?",
+            "How engaging were the discussions and analyses of philosophical texts and arguments?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 28,
+        "Category": "EE",
+        "Credits Worth": 3,
+        "ID": "EE23283",
+        "Name": "Embedded Systems Design",
+        "Questions": [
+            "How well did the course cover fundamental concepts of embedded systems such as microcontrollers, sensors, and actuators?",
+            "To what extent did the course provide hands-on experience with embedded system design, programming, and interfacing?",
+            "How useful were the laboratory projects and simulations in reinforcing theoretical concepts and practical skills?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 29,
+        "Category": "SC",
+        "Credits Worth": 2,
+        "ID": "SC23294",
+        "Name": "Introduction to Oceanography",
+        "Questions": [
+            "How well did the course cover basic oceanographic principles such as ocean currents, marine ecosystems, and coastal processes?",
+            "To what extent did the course explore human impacts on the oceans and marine conservation?",
+            "How useful were the field studies and hands-on activities in understanding oceanographic phenomena?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 30,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS23305",
+        "Name": "Artificial Intelligence",
+        "Questions": [
+            "How well did the course cover fundamental concepts of artificial intelligence such as search algorithms, knowledge representation, and machine learning?",
+            "To what extent did the course provide practical experience with AI techniques and applications?",
+            "How useful were the case studies and projects in applying AI to real-world problems?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 31,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS23316",
+        "Name": "Database Systems",
+        "Questions": [
+            "How well did the course cover fundamental concepts of database management such as relational models and query languages?",
+            "To what extent did the course provide hands-on experience with database design, implementation, and querying?",
+            "How useful were the case studies and projects in applying database concepts to real-world scenarios?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 32,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS23327",
+        "Name": "Computer Networks",
+        "Questions": [
+            "How well did the course cover fundamental concepts of computer networking such as protocols, routing, and switching?",
+            "To what extent did the course provide practical experience with network configuration, troubleshooting, and security?",
+            "How useful were the laboratory exercises and simulations in understanding network technologies and protocols?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 33,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS23338",
+        "Name": "Software Engineering",
+        "Questions": [
+            "How well did the course cover software development lifecycle models and methodologies?",
+            "To what extent did the course provide practical experience with software design, implementation, and testing?",
+            "How useful were the team projects and software engineering tools in preparing you for real-world software development?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 34,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS23349",
+        "Name": "Information Security",
+        "Questions": [
+            "How well did the course cover fundamental principles of information security such as cryptography, authentication, and access control?",
+            "To what extent did the course explore common security threats and vulnerabilities in computer systems and networks?",
+            "How useful were the hands-on exercises and case studies in understanding and mitigating security risks?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 35,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS23350",
+        "Name": "Big Data Analytics",
+        "Questions": [
+            "How well did the course cover fundamental concepts of big data analytics such as data preprocessing, analysis, and visualization?",
+            "To what extent did the course provide practical experience with big data tools and technologies?",
+            "How useful were the case studies and projects in analyzing and deriving insights from large-scale datasets?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 36,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS23361",
+        "Name": "Cloud Computing",
+        "Questions": [
+            "How well did the course cover fundamental concepts of cloud computing such as virtualization, scalability, and service models?",
+            "To what extent did the course provide practical experience with cloud platforms and services?",
+            "How useful were the assignments and projects in deploying and managing applications on the cloud?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 37,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS23372",
+        "Name": "Mobile Application Development",
+        "Questions": [
+            "How well did the course cover fundamental concepts of mobile app development such as UI design, navigation, and data management?",
+            "To what extent did the course provide practical experience with mobile development frameworks and tools?",
+            "How useful were the app development projects in applying mobile design principles and best practices?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 38,
+        "Category": "CS",
+        "Credits Worth": 5,
+        "ID": "CS23383",
+        "Name": "Natural Language Processing",
+        "Questions": [
+            "How well did the course cover fundamental techniques of natural language processing such as tokenization, parsing, and sentiment analysis?",
+            "To what extent did the course provide practical experience with NLP libraries and applications?",
+            "How useful were the projects and research papers in exploring advanced topics in NLP?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 39,
+        "Category": "CS",
+        "Credits Worth": 4,
+        "ID": "CS23394",
+        "Name": "Computer Vision",
+        "Questions": [
+            "How well did the course cover fundamental concepts of computer vision such as image processing, feature extraction, and object recognition?",
+            "To what extent did the course provide practical experience with CV algorithms and techniques?",
+            "How useful were the projects and case studies in applying computer vision to real-world problems?"
+        ]
+    },
+    {
+        "Year": 23,
+        "Index": 40,
+        "Category": "CS",
+        "Credits Worth": 3,
+        "ID": "CS23405",
+        "Name": "Human-Computer Interaction",
+        "Questions": [
+            "How well did the course cover fundamental principles of human-computer interaction such as usability, accessibility, and user experience design?",
+            "To what extent did the course provide practical experience with HCI research methods and usability testing?",
+            "How useful were the design projects and user studies in evaluating and improving interactive systems?"
+        ]
+    }
+]
