@@ -1,0 +1,582 @@
+{
+    "MA56": [
+        {
+            "Course ID": "MA23033",
+            "Course Name": "Multivariable Calculus"
+        }
+    ],
+    "CS18": [
+        {
+            "Course ID": "CS23063",
+            "Course Name": "Programming Fundamentals"
+        }
+    ],
+    "CS58": [
+        {
+            "Course ID": "CS23383",
+            "Course Name": "Natural Language Processing"
+        }
+    ],
+    "CS84": [
+        {
+            "Course ID": "CS22102",
+            "Course Name": "Introduction to Databases"
+        },
+        {
+            "Course ID": "CS23024",
+            "Course Name": "Data Structures and Algorithms"
+        },
+        {
+            "Course ID": "CS23261",
+            "Course Name": "Introduction to Algorithms"
+        }
+    ],
+    "MA45": [
+        {
+            "Course ID": "MA22063",
+            "Course Name": "Probability and Statistics"
+        }
+    ],
+    "EE17": [
+        {
+            "Course ID": "EE23218",
+            "Course Name": "Renewable Energy Systems"
+        }
+    ],
+    "MA67": [
+        {
+            "Course ID": "MA23063",
+            "Course Name": "Probability and Statistics"
+        }
+    ],
+    "MA82": [
+        {
+            "Course ID": "MA22093",
+            "Course Name": "Mathematical Logic"
+        }
+    ],
+    "EE35": [
+        {
+            "Course ID": "EE23174",
+            "Course Name": "Power Systems Analysis"
+        }
+    ],
+    "EE40": [
+        {
+            "Course ID": "EE22133",
+            "Course Name": "Introduction to Electronics"
+        }
+    ],
+    "HU95": [
+        {
+            "Course ID": "HU22272",
+            "Course Name": "Modern Philosophy"
+        }
+    ],
+    "MA38": [
+        {
+            "Course ID": "MA22023",
+            "Course Name": "Calculus II"
+        }
+    ],
+    "HU70": [
+        {
+            "Course ID": "HU22249",
+            "Course Name": "Literature and Culture"
+        },
+        {
+            "Course ID": "HU23042",
+            "Course Name": "Introduction to Literature"
+        }
+    ],
+    "EE18": [
+        {
+            "Course ID": "EE22074",
+            "Course Name": "Digital Signal Processing"
+        }
+    ],
+    "SC62": [
+        {
+            "Course ID": "SC23114",
+            "Course Name": "Genetics and Evolution"
+        }
+    ],
+    "MA33": [
+        {
+            "Course ID": "MA22013",
+            "Course Name": "Calculus I"
+        }
+    ],
+    "CS87": [
+        {
+            "Course ID": "CS23372",
+            "Course Name": "Mobile Application Development"
+        }
+    ],
+    "SC68": [
+        {
+            "Course ID": "SC22114",
+            "Course Name": "Genetics and Evolution"
+        }
+    ],
+    "CS98": [
+        {
+            "Course ID": "CS22405",
+            "Course Name": "Human-Computer Interaction"
+        },
+        {
+            "Course ID": "CS23361",
+            "Course Name": "Cloud Computing"
+        }
+    ],
+    "SC81": [
+        {
+            "Course ID": "SC22194",
+            "Course Name": "Astronomy and Astrophysics"
+        }
+    ],
+    "HU43": [
+        {
+            "Course ID": "HU23216",
+            "Course Name": "Introduction to Ethics in Technology"
+        }
+    ],
+    "CS70": [
+        {
+            "Course ID": "CS23125",
+            "Course Name": "Machine Learning Fundamentals"
+        }
+    ],
+    "EE65": [
+        {
+            "Course ID": "EE23133",
+            "Course Name": "Introduction to Electronics"
+        }
+    ],
+    "CS56": [
+        {
+            "Course ID": "CS22316",
+            "Course Name": "Database Systems"
+        },
+        {
+            "Course ID": "CS23102",
+            "Course Name": "Introduction to Databases"
+        }
+    ],
+    "HU12": [
+        {
+            "Course ID": "HU22042",
+            "Course Name": "Introduction to Literature"
+        }
+    ],
+    "SC88": [
+        {
+            "Course ID": "SC22294",
+            "Course Name": "Introduction to Oceanography"
+        }
+    ],
+    "MA39": [
+        {
+            "Course ID": "MA22083",
+            "Course Name": "Mathematical Modeling"
+        }
+    ],
+    "EE45": [
+        {
+            "Course ID": "EE23283",
+            "Course Name": "Embedded Systems Design"
+        }
+    ],
+    "HU48": [
+        {
+            "Course ID": "HU23182",
+            "Course Name": "Introduction to Psychology"
+        }
+    ],
+    "SC10": [
+        {
+            "Course ID": "SC23294",
+            "Course Name": "Introduction to Oceanography"
+        }
+    ],
+    "CS91": [
+        {
+            "Course ID": "CS23394",
+            "Course Name": "Computer Vision"
+        }
+    ],
+    "SC13": [
+        {
+            "Course ID": "SC23095",
+            "Course Name": "Quantum Mechanics"
+        }
+    ],
+    "MA71": [
+        {
+            "Course ID": "MA23073",
+            "Course Name": "Numerical Methods"
+        }
+    ],
+    "MA30": [
+        {
+            "Course ID": "MA22043",
+            "Course Name": "Differential Equations"
+        }
+    ],
+    "HU31": [
+        {
+            "Course ID": "HU22082",
+            "Course Name": "Philosophy of Ethics"
+        }
+    ],
+    "HU55": [
+        {
+            "Course ID": "HU23144",
+            "Course Name": "History of Art"
+        }
+    ],
+    "SC79": [
+        {
+            "Course ID": "SC22095",
+            "Course Name": "Quantum Mechanics"
+        }
+    ],
+    "MA28": [
+        {
+            "Course ID": "MA22104",
+            "Course Name": "Introduction to Linear Algebra"
+        }
+    ],
+    "CS33": [
+        {
+            "Course ID": "CS22372",
+            "Course Name": "Mobile Application Development"
+        }
+    ],
+    "HU42": [
+        {
+            "Course ID": "HU22182",
+            "Course Name": "Introduction to Psychology"
+        }
+    ],
+    "EE91": [
+        {
+            "Course ID": "EE23074",
+            "Course Name": "Digital Signal Processing"
+        }
+    ],
+    "HU46": [
+        {
+            "Course ID": "HU23272",
+            "Course Name": "Modern Philosophy"
+        }
+    ],
+    "SC80": [
+        {
+            "Course ID": "SC23250",
+            "Course Name": "Neuroscience"
+        }
+    ],
+    "EE92": [
+        {
+            "Course ID": "EE22035",
+            "Course Name": "Circuit Analysis"
+        }
+    ],
+    "MA94": [
+        {
+            "Course ID": "MA23053",
+            "Course Name": "Discrete Mathematics"
+        }
+    ],
+    "CS16": [
+        {
+            "Course ID": "CS22338",
+            "Course Name": "Software Engineering"
+        }
+    ],
+    "CS54": [
+        {
+            "Course ID": "CS22125",
+            "Course Name": "Machine Learning Fundamentals"
+        },
+        {
+            "Course ID": "CS22205",
+            "Course Name": "Introduction to Operating Systems"
+        }
+    ],
+    "SC38": [
+        {
+            "Course ID": "SC23167",
+            "Course Name": "Environmental Science"
+        }
+    ],
+    "HU17": [
+        {
+            "Course ID": "HU22144",
+            "Course Name": "History of Art"
+        }
+    ],
+    "CS45": [
+        {
+            "Course ID": "CS23205",
+            "Course Name": "Introduction to Operating Systems"
+        }
+    ],
+    "CS14": [
+        {
+            "Course ID": "CS23163",
+            "Course Name": "Web Development Basics"
+        }
+    ],
+    "MA76": [
+        {
+            "Course ID": "MA22073",
+            "Course Name": "Numerical Methods"
+        }
+    ],
+    "HU19": [
+        {
+            "Course ID": "HU22216",
+            "Course Name": "Introduction to Ethics in Technology"
+        }
+    ],
+    "MA37": [
+        {
+            "Course ID": "MA22033",
+            "Course Name": "Multivariable Calculus"
+        }
+    ],
+    "SC53": [
+        {
+            "Course ID": "SC22227",
+            "Course Name": "Environmental Science"
+        }
+    ],
+    "CS46": [
+        {
+            "Course ID": "CS22349",
+            "Course Name": "Information Security"
+        },
+        {
+            "Course ID": "CS22394",
+            "Course Name": "Computer Vision"
+        }
+    ],
+    "MA36": [
+        {
+            "Course ID": "MA23013",
+            "Course Name": "Calculus I"
+        }
+    ],
+    "SC19": [
+        {
+            "Course ID": "SC23052",
+            "Course Name": "Basics of Chemistry"
+        }
+    ],
+    "MA12": [
+        {
+            "Course ID": "MA23093",
+            "Course Name": "Mathematical Logic"
+        }
+    ],
+    "MA57": [
+        {
+            "Course ID": "MA23043",
+            "Course Name": "Differential Equations"
+        }
+    ],
+    "MA83": [
+        {
+            "Course ID": "MA22053",
+            "Course Name": "Discrete Mathematics"
+        }
+    ],
+    "CS39": [
+        {
+            "Course ID": "CS23316",
+            "Course Name": "Database Systems"
+        }
+    ],
+    "CS92": [
+        {
+            "Course ID": "CS22350",
+            "Course Name": "Big Data Analytics"
+        },
+        {
+            "Course ID": "CS23349",
+            "Course Name": "Information Security"
+        }
+    ],
+    "HU28": [
+        {
+            "Course ID": "HU23082",
+            "Course Name": "Philosophy of Ethics"
+        }
+    ],
+    "SC51": [
+        {
+            "Course ID": "SC22250",
+            "Course Name": "Neuroscience"
+        }
+    ],
+    "SC57": [
+        {
+            "Course ID": "SC23013",
+            "Course Name": "Introduction to Physics"
+        }
+    ],
+    "SC55": [
+        {
+            "Course ID": "SC23152",
+            "Course Name": "Introduction to Geology"
+        }
+    ],
+    "CS72": [
+        {
+            "Course ID": "CS22163",
+            "Course Name": "Web Development Basics"
+        }
+    ],
+    "EE39": [
+        {
+            "Course ID": "EE22174",
+            "Course Name": "Power Systems Analysis"
+        }
+    ],
+    "CS28": [
+        {
+            "Course ID": "CS22024",
+            "Course Name": "Data Structures and Algorithms"
+        }
+    ],
+    "SC61": [
+        {
+            "Course ID": "SC23194",
+            "Course Name": "Astronomy and Astrophysics"
+        }
+    ],
+    "CS47": [
+        {
+            "Course ID": "CS22327",
+            "Course Name": "Computer Networks"
+        }
+    ],
+    "EE25": [
+        {
+            "Course ID": "EE22283",
+            "Course Name": "Embedded Systems Design"
+        }
+    ],
+    "SC42": [
+        {
+            "Course ID": "SC22013",
+            "Course Name": "Introduction to Physics"
+        }
+    ],
+    "CS41": [
+        {
+            "Course ID": "CS23327",
+            "Course Name": "Computer Networks"
+        }
+    ],
+    "CS95": [
+        {
+            "Course ID": "CS23405",
+            "Course Name": "Human-Computer Interaction"
+        }
+    ],
+    "SC40": [
+        {
+            "Course ID": "SC22052",
+            "Course Name": "Basics of Chemistry"
+        }
+    ],
+    "CS76": [
+        {
+            "Course ID": "CS23305",
+            "Course Name": "Artificial Intelligence"
+        }
+    ],
+    "EE66": [
+        {
+            "Course ID": "EE23035",
+            "Course Name": "Circuit Analysis"
+        }
+    ],
+    "HU53": [
+        {
+            "Course ID": "HU23249",
+            "Course Name": "Literature and Culture"
+        }
+    ],
+    "CS85": [
+        {
+            "Course ID": "CS22305",
+            "Course Name": "Artificial Intelligence"
+        }
+    ],
+    "MA19": [
+        {
+            "Course ID": "MA23023",
+            "Course Name": "Calculus II"
+        },
+        {
+            "Course ID": "MA23083",
+            "Course Name": "Mathematical Modeling"
+        }
+    ],
+    "CS89": [
+        {
+            "Course ID": "CS22063",
+            "Course Name": "Programming Fundamentals"
+        }
+    ],
+    "CS66": [
+        {
+            "Course ID": "CS23350",
+            "Course Name": "Big Data Analytics"
+        }
+    ],
+    "EE64": [
+        {
+            "Course ID": "EE22238",
+            "Course Name": "Renewable Energy Systems"
+        }
+    ],
+    "MA25": [
+        {
+            "Course ID": "MA23104",
+            "Course Name": "Introduction to Linear Algebra"
+        }
+    ],
+    "SC37": [
+        {
+            "Course ID": "SC22152",
+            "Course Name": "Introduction to Geology"
+        }
+    ],
+    "CS43": [
+        {
+            "Course ID": "CS22261",
+            "Course Name": "Introduction to Algorithms"
+        },
+        {
+            "Course ID": "CS23338",
+            "Course Name": "Software Engineering"
+        }
+    ],
+    "CS57": [
+        {
+            "Course ID": "CS22361",
+            "Course Name": "Cloud Computing"
+        }
+    ],
+    "CS34": [
+        {
+            "Course ID": "CS22383",
+            "Course Name": "Natural Language Processing"
+        }
+    ]
+}

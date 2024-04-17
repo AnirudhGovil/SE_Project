@@ -29,6 +29,21 @@ for course in course_features:
 with open('course_features_aggregated.pkl', 'wb') as f:
     pickle.dump(course_features_aggregated, f)
 
+# Read the professors.json file
+with open('professors.json') as f:
+    professors = json.load(f)
+
+# For each professor, assign them the course_features_aggregated of the courses they are teaching
+professor_features = {}
+for professor in professors:
+    professor_features[professor] = []
+    for course in professors[professor]:
+        professor_features[professor].append(course_features_aggregated[course['Course ID']])
+
+# Save the professor features to a pkl file
+with open('professor_features.pkl', 'wb') as f:
+    pickle.dump(professor_features, f)
+
 # Now to create student features, we must find out which courses each student has taken, and what feedback they have given
 with open('course_feedback_forms_by_student.json') as f:
     course_feedback_forms_by_student = json.load(f)

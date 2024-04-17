@@ -30,6 +30,7 @@ class CourseForm:
         assignment_quality = int(input('How much do you value the quality of the assignments? (1-10): '))
         exam_quality = int(input('How much do you value the quality of the exams? (1-10): '))
         expectation_alignment = int(input('How important is it to you that the course aligns with your expectations? (1-10): '))
+        instructor_quality = int(input('How much do you value the quality of the instructor? (1-10): '))
         user_preferences = np.array([difficulty, time_commitment, new_learning, structure_quality, material_quality, assignment_quality, exam_quality, expectation_alignment])
-        feature_labels = ['Difficulty', 'Time commitment', 'New learning', 'Structure quality', 'Material quality', 'Assignment quality', 'Exam quality', 'Expectation alignment']
+        feature_labels = ['Difficulty', 'Time commitment', 'New learning', 'Structure quality', 'Material quality', 'Assignment quality', 'Exam quality', 'Expectation alignment', 'Instructor quality']
         return roll_number, course_type, user_preferences, feature_labels

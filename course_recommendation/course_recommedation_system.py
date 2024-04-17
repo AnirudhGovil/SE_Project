@@ -82,8 +82,8 @@ class CourseRecommendationSystem:
         student_profile_vector = np.mean(course_features_weighted, axis=0)
 
         print('\nAggregated features of the courses you have taken:\n')
-        for i in range(8):
-            print(feature_labels[i], ': ', student_profile_vector[i])
+        for i in range(len(feature_labels)):
+            print(feature_labels[i], ': ', student_profile_vector)
         print('')
 
         return student_profile_vector
@@ -118,7 +118,7 @@ class CourseRecommendationSystem:
             course_id = list(self.course_features_filtered.keys())[index]
             print(self.courses[course_id]['Name'])
             print('Course ID: ', course_id)
-            for i in range(8):
+            for i in range(len(feature_labels)):
                 print(feature_labels[i], ': ', self.course_features_filtered[course_id][i])
             print('')
         
@@ -136,19 +136,6 @@ class CourseRecommendationSystem:
             course_id = list(self.course_features_filtered.keys())[index]
             print(self.courses[course_id]['Name'])
             print('Course ID: ', course_id)
-            for i in range(8):
+            for i in range(len(feature_labels)):
                 print(feature_labels[i], ': ', self.course_features_filtered[course_id][i])
             print('')
-
-    
-
-
-
-
-
-
-
-
-
-
-

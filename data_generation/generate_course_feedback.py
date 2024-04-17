@@ -21,9 +21,8 @@ student_roll_numbers = []
 # The roll number will be a string of the form YYYYXXXZZZ where YYYY is the year of joining, XXX is the department code and ZZZ is a unique number
 
 # The department codes are as follows:
-joining_years = ['2017', '2018', '2019', '2020', '2021']
+joining_years = ['2018', '2019', '2020', '2021']
 department_codes = ['101', '102', '103', '104']
-
 # We will generate 1000 students
 
 for i in range(1000):
@@ -34,10 +33,33 @@ for i in range(1000):
     roll_number = year + department + str(unique_number)
     student_roll_numbers.append(roll_number)
 
+
+# We will now assign a professor to each course, for each course check if the Category matches the professor's Category
+for course in courses:
+    category = courses[course]['Category']
+    courses[course]['Professor'] = category + str(np.random.randint(10, 100))
+
+# Now we can get a list of professors
+professors = list(set([courses[course]['Professor'] for course in courses]))
+
+# We can even create a dictionary of professors with the professor id as the key
+professors_dict = {professor: [] for professor in professors}
+
+# Add the courses each professor is teaching
+for course in courses:
+    professors_dict[courses[course]['Professor']].append({
+        'Course ID': course,
+        'Course Name': courses[course]['Name']
+    })
+
+# Save the professors dictionary to a json file
+with open('professors.json', 'w') as file:
+    json.dump(professors_dict, file, indent=4)
+
 # Each student will take between 10 and 40 courses
 students = {}
 for student_roll_number in student_roll_numbers:
-    num_courses = np.random.randint(10, 41)
+    num_courses = np.random.randint(5, 30)
     student_courses = np.random.choice(course_ids, num_courses, replace=False)
     students[student_roll_number] = student_courses
 
@@ -74,6 +96,7 @@ for student in students:
         course_specific_question1_rating = np.random.randint(1,11)
         course_specific_question2_rating = np.random.randint(1,11)
         course_specific_question3_rating = np.random.randint(1,11)
+        instructor_quality_rating = np.random.randint(1,11)
         course_feedback_forms[student][course] = {
             'How would you rate the difficulty of the course?': difficulty_rating,
             'How would you rate the extent of time commitment required for the course?': int(((difficulty_rating + np.random.randint(-1, 2))/11)*9)+1,
@@ -83,10 +106,11 @@ for student in students:
             'How would you rate the quality of the assignments?': int(((course_structure_rating + np.random.randint(-1, 2))/11)*9)+1,
             'How would you rate the quality of the exams?': int(((course_structure_rating + np.random.randint(-1, 2))/11)*9)+1,
             'How well did the course align with your expectations?': expectation_alignment_rating,
-            'How likely are you to recommend this course to your juniors?': int(((course_structure_rating - difficulty_rating + expectation_alignment_rating + learning_rating)/40)*9)+1,
+            'How likely are you to recommend this course to your juniors?': int(((course_structure_rating - difficulty_rating + expectation_alignment_rating + learning_rating + instructor_quality_rating)/50)*9)+1,
             courses[course]['Questions'][0]: int(((recommendation_likelihood_rating + np.random.randint(-1, 2))/11)*9)+1,
             courses[course]['Questions'][1]: int(((recommendation_likelihood_rating + np.random.randint(-1, 2))/11)*9)+1,
-            courses[course]['Questions'][2]: int(((recommendation_likelihood_rating + np.random.randint(-1, 2))/11)*9+1)
+            courses[course]['Questions'][2]: int(((recommendation_likelihood_rating + np.random.randint(-1, 2))/11)*9+1),
+            'How would you rate the quality of your instructor?': instructor_quality_rating
         }
 
 # Reorganize the feedback forms by course
@@ -108,7 +132,8 @@ for course in course_feedback_forms_by_course:
     course_structure_rating = np.random.randint(1,11)
     expectation_alignment_rating = np.random.randint(1,11)
     recommendation_likelihood_rating = np.random.randint(1,11)
-    offset = [difficulty_rating, difficulty_rating, learning_rating, course_structure_rating, course_structure_rating, course_structure_rating, course_structure_rating, expectation_alignment_rating, course_structure_rating - difficulty_rating + expectation_alignment_rating + learning_rating, course_specific_question1_rating, course_specific_question2_rating, course_specific_question3_rating]
+    instructor_quality_rating = np.random.randint(1,11)
+    offset = [difficulty_rating, difficulty_rating, learning_rating, course_structure_rating, course_structure_rating, course_structure_rating, course_structure_rating, expectation_alignment_rating, course_structure_rating - difficulty_rating + expectation_alignment_rating + learning_rating, course_specific_question1_rating, course_specific_question2_rating, course_specific_question3_rating, instructor_quality_rating]
     for feedback in course_feedback_forms_by_course[course]:
         i = 0
         for key in feedback['Feedback']:
