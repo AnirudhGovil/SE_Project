@@ -3,43 +3,43 @@ import json
 
 # Read the courses.json file
 
-with open('courses.json') as f:
-    courses = json.load(f)
+with open('courses.json') as file:
+    courses_data = json.load(file)
 
 # Create a courses dictionary with the course id as the key
-courses = {course['ID']: course for course in courses}
+courses = {course['ID']: course for course in courses_data}
 
 # Create a list of course ids
 course_ids = list(courses.keys())
 
 # We shall generate a bunch of students
 
-students_rolls = []
+student_roll_numbers = []
 
 # Each student will have a unique id i.e. their roll number
 
 # The roll number will be a string of the form YYYYXXXZZZ where YYYY is the year of joining, XXX is the department code and ZZZ is a unique number
 
 # The department codes are as follows:
-years = ['2017', '2018', '2019', '2020', '2021']
-departments = ['101', '102', '103', '104']
+joining_years = ['2017', '2018', '2019', '2020', '2021']
+department_codes = ['101', '102', '103', '104']
 
 # We will generate 1000 students
 
 for i in range(1000):
-    year = np.random.choice(years)
-    department = np.random.choice(departments)
+    year = np.random.choice(joining_years)
+    department = np.random.choice(department_codes)
     # The unique number will be a random 3 digit number
     unique_number = np.random.randint(100, 1000)
     roll_number = year + department + str(unique_number)
-    students_rolls.append(roll_number)
+    student_roll_numbers.append(roll_number)
 
 # Each student will take between 10 and 40 courses
 students = {}
-for student in students_rolls:
+for student_roll_number in student_roll_numbers:
     num_courses = np.random.randint(10, 41)
     student_courses = np.random.choice(course_ids, num_courses, replace=False)
-    students[student] = student_courses
+    students[student_roll_number] = student_courses
 
 # Ensure that no student has taken the same course twice
 for student in students:
@@ -62,24 +62,31 @@ course_feedback_forms = {}
 for student in students:
     course_feedback_forms[student] = {}
     for course in students[student]:
-        alpha = np.random.randint(1,11)
-        beta = np.random.randint(1,11)
-        gamma = np.random.randint(1,11)
-        delta = np.random.randint(1,11)
-        eta = np.random.randint(1,11)
+        difficulty_rating = np.random.randint(1,11)
+        time_commitment_rating = np.random.randint(1,11)
+        learning_rating = np.random.randint(1,11)
+        course_structure_rating = np.random.randint(1,11)
+        material_quality_rating = np.random.randint(1,11)
+        assignment_quality_rating = np.random.randint(1,11)
+        exam_quality_rating = np.random.randint(1,11)
+        expectation_alignment_rating = np.random.randint(1,11)
+        recommendation_likelihood_rating = np.random.randint(1,11)
+        course_specific_question1_rating = np.random.randint(1,11)
+        course_specific_question2_rating = np.random.randint(1,11)
+        course_specific_question3_rating = np.random.randint(1,11)
         course_feedback_forms[student][course] = {
-            'How would you rate the difficulty of the course?': alpha,
-            'How would you rate the extent of time commitment required for the course?': int(((alpha + np.random.randint(-1, 2))/11)*9)+1,
-            'How much would you say you learned from the course?': eta,
-            'How well do you think the course was structured?': beta,
-            'How would you rate the quality of the course material?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
-            'How would you rate the quality of the assignments?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
-            'How would you rate the quality of the exams?': int(((beta + np.random.randint(-1, 2))/11)*9)+1,
-            'How well did the course align with your expectations?': gamma,
-            'How likely are you to recommend this course to your juniors?': int(((beta - alpha + gamma + eta)/40)*9)+1,
-            courses[course]['Questions'][0]: int(((delta + np.random.randint(-1, 2))/11)*9)+1,
-            courses[course]['Questions'][1]: int(((delta + np.random.randint(-1, 2))/11)*9)+1,
-            courses[course]['Questions'][2]: int(((delta + np.random.randint(-1, 2))/11)*9+1)
+            'How would you rate the difficulty of the course?': difficulty_rating,
+            'How would you rate the extent of time commitment required for the course?': int(((difficulty_rating + np.random.randint(-1, 2))/11)*9)+1,
+            'How much would you say you learned from the course?': learning_rating,
+            'How well do you think the course was structured?': course_structure_rating,
+            'How would you rate the quality of the course material?': int(((course_structure_rating + np.random.randint(-1, 2))/11)*9)+1,
+            'How would you rate the quality of the assignments?': int(((course_structure_rating + np.random.randint(-1, 2))/11)*9)+1,
+            'How would you rate the quality of the exams?': int(((course_structure_rating + np.random.randint(-1, 2))/11)*9)+1,
+            'How well did the course align with your expectations?': expectation_alignment_rating,
+            'How likely are you to recommend this course to your juniors?': int(((course_structure_rating - difficulty_rating + expectation_alignment_rating + learning_rating)/40)*9)+1,
+            courses[course]['Questions'][0]: int(((recommendation_likelihood_rating + np.random.randint(-1, 2))/11)*9)+1,
+            courses[course]['Questions'][1]: int(((recommendation_likelihood_rating + np.random.randint(-1, 2))/11)*9)+1,
+            courses[course]['Questions'][2]: int(((recommendation_likelihood_rating + np.random.randint(-1, 2))/11)*9+1)
         }
 
 # Reorganize the feedback forms by course
@@ -97,10 +104,16 @@ for student in course_feedback_forms:
 # To force the courses to have different features, we will add a random number to the features of each course
 
 for course in course_feedback_forms_by_course:
-    offset = np.random.randint(0, 10)
+    difficulty_rating = np.random.randint(1,11)
+    course_structure_rating = np.random.randint(1,11)
+    expectation_alignment_rating = np.random.randint(1,11)
+    recommendation_likelihood_rating = np.random.randint(1,11)
+    offset = [difficulty_rating, difficulty_rating, learning_rating, course_structure_rating, course_structure_rating, course_structure_rating, course_structure_rating, expectation_alignment_rating, course_structure_rating - difficulty_rating + expectation_alignment_rating + learning_rating, course_specific_question1_rating, course_specific_question2_rating, course_specific_question3_rating]
     for feedback in course_feedback_forms_by_course[course]:
+        i = 0
         for key in feedback['Feedback']:
-            feedback['Feedback'][key] += offset
+            feedback['Feedback'][key] += offset[i]
+            i += 1
             # Normalize the feedback to be between 1 and 10 by dividing by 12 and multiplying by 10
             feedback['Feedback'][key] = int((feedback['Feedback'][key]/20)*9)+1
 
@@ -111,17 +124,17 @@ for course in course_feedback_forms_by_course:
 
 
 # Save the feedback forms by course to a json file
-with open('course_feedback_forms_by_course.json', 'w') as f:
-    json.dump(course_feedback_forms_by_course, f, indent=4)
+with open('course_feedback_forms_by_course.json', 'w') as file:
+    json.dump(course_feedback_forms_by_course, file, indent=4)
 
 
 # Save the feedback forms to a json file
-with open('course_feedback_forms_by_student.json', 'w') as f:
-    json.dump(course_feedback_forms, f, indent=4)
+with open('course_feedback_forms_by_student.json', 'w') as file:
+    json.dump(course_feedback_forms, file, indent=4)
 
 
 # Create a students dictionary with the student roll number as the key
-students_dict = {student: [] for student in students_rolls}
+students_dict = {student: [] for student in student_roll_numbers}
 # Add the courses IDs and names each student has taken
 for student in students:
     for course in students[student]:
@@ -132,7 +145,7 @@ for student in students:
         })
 
 # Save the students dictionary to a json file
-with open('students.json', 'w') as f:
-    json.dump(students_dict, f, indent=4)
+with open('students.json', 'w') as file:
+    json.dump(students_dict, file, indent=4)
 
     
