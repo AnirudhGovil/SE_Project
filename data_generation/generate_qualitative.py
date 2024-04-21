@@ -71,19 +71,14 @@ def load_course_prompt(code, courses, course_features_aggregated):
     prompt = []
     prompt.append({
         "role": "system",
-        "content": f"""
-        You are an expert in sentiment analyses and course feedbacks. You need to generate 10 possible course feedbacks that students could give for a course that will be given by the user. All questions are out of 10. Write a paragraph for each feedback. Do not mention any sort of score in the feedback as those have already been provided in the questions, rather focus on more abstract things that a student might want to highlight about the course, instructor, material etc. Make sure that the students give a good feedback for topics whose scores are > 7 and negative feedback for topics whose scores are < 5.
+        "content": f"""You are an expert in sentiment analyses and course feedbacks. You need to generate 10 possible course feedbacks that students could give for a course that will be given by the user. All questions are out of 10. Write a paragraph for each feedback. Do not mention any sort of score in the feedback as those have already been provided in the questions, rather focus on more abstract things that a student might want to highlight about the course, instructor, material etc. Make sure that the students give a good feedback for topics whose scores are > 7 and negative feedback for topics whose scores are < 5.
         
-        
-        The output format should be json.
-        
+        The format should just be:
+        Feedback Number: A paragraph of feedback.
         """})
     prompt.append({
         "role": "user",
-        "content": f"""
-        Course Name: {course_info['Name']},
-        Questions: {qna}
-        """
+        "content": f"""Course Name: {course_info['Name']},Questions: {qna}"""
     })
     
     return prompt
@@ -109,11 +104,15 @@ def main(
 
     `max_gen_len` is optional because finetuned models are able to stop generations naturally.
     """
-    course_code = 'MA22104'
-    courses = load_courses()
+    courses = load_courses()[:2]
     course_feat = load_course_features()
-    
-    prompt = load_course_prompt(course_code, courses, course_feat)
+    prompts = []
+    for course in courses:
+        course_code = course['ID']
+        prompt = load_course_prompt(course_code, courses, course_feat)
+        prompts.append(prompt)
+    # print(prompts)
+    # exit()
     
     generator = Llama.build(
         ckpt_dir=ckpt_dir,
@@ -122,7 +121,7 @@ def main(
         max_batch_size=max_batch_size,
     )
     
-    dialogs: List[Dialog] = [prompt]
+    dialogs: List[Dialog] = prompts
     # dialogs: List[Dialog] = [
     #     [{
     #         "role": "user", 
@@ -157,6 +156,7 @@ def main(
         print(
             f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
         )
+        # print(result['generation']['content'])
         print("\n==================================\n")
 
 
