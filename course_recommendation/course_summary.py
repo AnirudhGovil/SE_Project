@@ -166,8 +166,8 @@ def main(
     #         f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
     #     )
     #     print("\n==================================\n")
-    for i in range(4):
-        summaries = get_summary(generator, dialogs, max_gen_len, temperature, top_p)
+    for i in range(0, len(dialogs), 2):
+        summaries = get_summary(generator, dialogs[i:i+2], max_gen_len, temperature, top_p)
         print(summaries)
 
 if __name__ == "__main__":

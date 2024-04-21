@@ -93,6 +93,26 @@ def parse_results(results):
     assert len(feedbacks) == 10, "Feedbacks not generated properly"
     return feedbacks
 
+def generate_feedback(generator, dialogs, max_gen_len, temperature, top_p, feedbacks, course_codes):
+    results = generator.chat_completion(
+        dialogs,
+        max_gen_len=max_gen_len,
+        temperature=temperature,
+        top_p=top_p,
+    )
+    i = 0
+    for dialog, result in zip(dialogs, results):
+        # for msg in dialog:
+        #     print(f"{msg['role'].capitalize()}: {msg['content']}\n")
+        # print(
+        #     f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
+        # )
+        # # print(result['generation']['content'])
+        feedback = parse_results(result['generation']['content'])
+        feedbacks[course_codes[i]] = feedback
+        i += 1
+        # print("\n==================================\n")
+
 def main(
     ckpt_dir: str,
     tokenizer_path: str,
@@ -114,7 +134,7 @@ def main(
     `max_gen_len` is optional because finetuned models are able to stop generations naturally.
     """
     feedbacks = {}
-    courses = load_courses()[:2]
+    courses = load_courses()
     course_feat = load_course_features()
     prompts = []
     course_codes = []
@@ -136,24 +156,9 @@ def main(
     
     dialogs: List[Dialog] = prompts
 
-    results = generator.chat_completion(
-        dialogs,
-        max_gen_len=max_gen_len,
-        temperature=temperature,
-        top_p=top_p,
-    )
-    i = 0
-    for dialog, result in zip(dialogs, results):
-        # for msg in dialog:
-        #     print(f"{msg['role'].capitalize()}: {msg['content']}\n")
-        # print(
-        #     f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
-        # )
-        # # print(result['generation']['content'])
-        feedback = parse_results(result['generation']['content'])
-        feedbacks[course_codes[i]] = feedback
-        i += 1
-        # print("\n==================================\n")
+    for i in range(0, len(dialogs), 2):
+        generate_feedback(generator, dialogs[i:i+2], max_gen_len, temperature, top_p, feedbacks, course_codes[i:i+2])
+        # break
     
     with open('course_feedbacks.json', 'w') as file:
         # dump the feedbacks to a json file with spaces and newlines
