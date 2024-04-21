@@ -37,7 +37,7 @@ def load_course_feedbacks():
     Returns:
     - feedbacks: A list of feedbacks.
     """
-    with open('data_generation/course_feedbacks_test.json', 'r') as file:
+    with open('data_generation/course_feedbacks.json', 'r') as file:
         feedbacks = json.load(file)
     return feedbacks
 
@@ -85,7 +85,7 @@ def load_course_prompt(code, courses, course_features_aggregated, feedbacks):
     prompt = []
     prompt.append({
         "role": "system",
-        "content": f"""You are an expert in sentiment analyses and course feedbacks. Given the below details of the course along with feedbacks from students, generate a brief summary giving information about the course.
+        "content": f"""You are an expert in sentiment analyses and course feedbacks. Given the below details of the course along with feedbacks from students, generate a summary giving information about the course. The summary should include all the points mentioned in the feedbacks and deduce a description of the courses based on that.
         
         The format shoud be like this:
         Summary: <summary>
@@ -166,9 +166,18 @@ def main(
     #         f"> {result['generation']['role'].capitalize()}: {result['generation']['content']}"
     #     )
     #     print("\n==================================\n")
-    for i in range(0, len(dialogs), 2):
+    course_summaries = {}
+    from tqdm import tqdm
+    for i in tqdm(range(0, len(dialogs), 2)):
         summaries = get_summary(generator, dialogs[i:i+2], max_gen_len, temperature, top_p)
-        print(summaries)
+        for j in range(len(summaries)):
+            # print(f"Course: {courses[i+j]['Name']}")
+            # print(f"Summary: {summaries[j]}")
+            # print("==================================\n")
+            course_summaries[courses[i+j]['ID']] = summaries[j]
+    
+    with open('data_generation/course_summaries.json', 'w') as file:
+        json.dump(course_summaries, file, indent=4)
 
 if __name__ == "__main__":
     fire.Fire(main)
