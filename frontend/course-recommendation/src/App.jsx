@@ -40,7 +40,7 @@ function App() {
             <Route path="/signup" element={<SignUp />} />
 
             <Route path="/courses" element= {<PrivateRoute component={Courses} />} />
-            <Route path="/feedback" element={<PrivateRoute component={FeedbackForm} />} />
+            <Route path="/feedback/*" element={<PrivateRoute component={FeedbackForm} />} />
             <Route path="/recommendation" element={<PrivateRoute component={Recommendation} />} />
           </Routes>
         </BrowserRouter>

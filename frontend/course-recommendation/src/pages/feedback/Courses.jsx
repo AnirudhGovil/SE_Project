@@ -42,4 +42,5 @@ const CourseCard = ({ course }) => {
   );
 }
 
+
 export default Courses;
