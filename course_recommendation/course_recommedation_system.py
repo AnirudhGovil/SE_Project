@@ -50,39 +50,26 @@ class CourseRecommendationSystem:
             course_feedback_forms_by_student = json.load(file)
         return course_feedback_forms_by_student
 
-    def get_features_of_courses_taken(self, roll_number, n):
+
+    def get_student_profile_vector(self, roll_number, features, feature_labels):
         """
         Retrieves the features of courses taken by a student.
 
         Parameters:
         - roll_number: The roll number of the student.
-        - n: The number of features to retrieve.
-
-        Returns:
-        - features_of_courses_taken: A dictionary containing the features of courses taken by the student, with course IDs as keys.
-        """
-        courses_taken = self.course_feedback_forms_by_student[roll_number]
-        features_of_courses_taken = {course: self.course_features_aggregated[course][:n+1] for course in courses_taken}
-        return features_of_courses_taken
+        - features: The features to consider.
         
-    def get_student_profile_vector(self, course_features_taken, n, feature_labels):
-        """
-        Calculates the student profile vector based on the features of courses taken.
-
-        Parameters:
-        - course_features_taken: A dictionary containing the features of courses taken by the student, with course IDs as keys.
-        - n: The number of features to consider.
-        - feature_labels: The labels of the features.
-
         Returns:
         - student_profile_vector: The student profile vector.
         """
-        course_features_weighted = np.array([course_features_taken[course]*(course_features_taken[course][n]/10) for course in course_features_taken])
-        course_features_weighted = np.array([course[:n] for course in course_features_weighted])
-        student_profile_vector = np.mean(course_features_weighted, axis=0)
+        courses_taken = self.course_feedback_forms_by_student[roll_number]
+        # Choose the featues of the courses taken by the student using the features array
+        features_of_courses_taken = {course: np.array([courses_taken[course][feature] for feature in features]) for course in courses_taken}
+        # Aggregate the features of the courses taken by the student
+        student_profile_vector = np.mean(list(features_of_courses_taken.values()), axis=0)
 
         print('\nAggregated features of the courses you have taken:\n')
-        for i in range(8):
+        for i in range(len(feature_labels)):
             print(feature_labels[i], ': ', student_profile_vector[i])
         print('')
 
@@ -118,7 +105,7 @@ class CourseRecommendationSystem:
             course_id = list(self.course_features_filtered.keys())[index]
             print(self.courses[course_id]['Name'])
             print('Course ID: ', course_id)
-            for i in range(8):
+            for i in range(len(feature_labels)):
                 print(feature_labels[i], ': ', self.course_features_filtered[course_id][i])
             print('')
         
@@ -130,25 +117,16 @@ class CourseRecommendationSystem:
         - courses_taken_aggregated: The aggregated features of the courses taken.
         - feature_labels: The labels of the features.
         """
+        # Delete the courses taken by the student from the filtered courses
+        for course in self.course_features_filtered:
+            if course in courses_taken_aggregated:
+                del self.course_features_filtered[course]
         indices_similar = self.model.recommend(courses_taken_aggregated)
         print('\nCourses similar to the ones you have taken:\n')
         for index in indices_similar:
             course_id = list(self.course_features_filtered.keys())[index]
             print(self.courses[course_id]['Name'])
             print('Course ID: ', course_id)
-            for i in range(8):
+            for i in range(len(feature_labels)):
                 print(feature_labels[i], ': ', self.course_features_filtered[course_id][i])
             print('')
-
-    
-
-
-
-
-
-
-
-
-
-
-

@@ -25,9 +25,29 @@ course_features_aggregated = {}
 for course in course_features:
     course_features_aggregated[course] = np.mean(course_features[course], axis=0)
 
+# Save the aggregated features to a json file
+course_features_aggregated_json = {course: course_features_aggregated[course].tolist() for course in course_features_aggregated}
+with open('course_features_aggregated.json', 'w') as f:
+    json.dump(course_features_aggregated_json, f)
+
 # Save the aggregated features to a pkl file
 with open('course_features_aggregated.pkl', 'wb') as f:
     pickle.dump(course_features_aggregated, f)
+
+# Read the professors.json file
+with open('professors.json') as f:
+    professors = json.load(f)
+
+# For each professor, assign them the course_features_aggregated of the courses they are teaching
+professor_features = {}
+for professor in professors:
+    professor_features[professor] = []
+    for course in professors[professor]:
+        professor_features[professor].append(course_features_aggregated[course['Course ID']])
+
+# Save the professor features to a pkl file
+with open('professor_features.pkl', 'wb') as f:
+    pickle.dump(professor_features, f)
 
 # Now to create student features, we must find out which courses each student has taken, and what feedback they have given
 with open('course_feedback_forms_by_student.json') as f:
@@ -39,6 +59,15 @@ for student in course_feedback_forms_by_student:
     for feedback in course_feedback_forms_by_student[student]:
         student_dict[feedback] = np.array(list(course_feedback_forms_by_student[student][feedback].values()))
     student_features[student] = student_dict
+
+# Save the student features to a json file
+student_features_json = {student: {feedback: student_features[student][feedback].tolist() for feedback in student_features[student]} for student in student_features}
+# Take the mean of the features for each student
+for student in student_features_json:
+    for feedback in student_features_json[student]:
+        student_features_json[student][feedback] = np.mean(student_features_json[student][feedback], axis=0).tolist()
+with open('student_features.json', 'w') as f:
+    json.dump(student_features_json, f)
 
 # Dump the student features to a pkl file
 with open('student_features.pkl', 'wb') as f:
