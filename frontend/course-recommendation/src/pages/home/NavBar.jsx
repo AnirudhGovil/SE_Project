@@ -11,12 +11,12 @@ const NavBar = () => {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link href="/home">Home</Nav.Link>
           {isLoggedIn && (
             <>
                 <Nav.Link href="/courses">Courses</Nav.Link>
-              <Nav.Link href="/feedback">Feedback</Nav.Link>
-              <Nav.Link href="/recommendation">Recommendation</Nav.Link>
+              {/* <Nav.Link href="/feedback">Feedback</Nav.Link> */}
+              <Nav.Link href="/recommendationForm">Recommendation Form</Nav.Link>
+              <Nav.Link href="/recommendations">Recommendations</Nav.Link>
             </>
           )}
         </Nav>
@@ -30,6 +30,11 @@ const NavBar = () => {
             <NavDropdown title="Profile" id="basic-nav-dropdown">
               <NavDropdown.Item href="/profile">View Profile</NavDropdown.Item>
               <NavDropdown.Divider />
+
+              <NavDropdown.Item href="/mycourses">My Courses</NavDropdown.Item>
+              <NavDropdown.Divider />
+              
+
               <NavDropdown.Item href="/logout">Logout</NavDropdown.Item>
             </NavDropdown>
           )}

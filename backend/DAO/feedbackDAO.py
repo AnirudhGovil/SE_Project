@@ -12,13 +12,19 @@ class FeedbackDAO:
         """
         Adds a new feedback to the database.
         """
-        conn = sqlite3.connect(self.db_path)
-        conn.execute("PRAGMA foreign_keys = ON;")  # Enabling foreign key constraint enforcement
-        c = conn.cursor()
-        c.execute("INSERT INTO Feedback (feedback_id, course_id, student_id, feedback_text) VALUES (?, ?, ?, ?)",
-                  (feedback_dto.feedback_id, feedback_dto.course_id, feedback_dto.student_id, feedback_dto.feedback_text))
-        conn.commit()
-        conn.close()
+        try:
+            conn = sqlite3.connect(self.db_path)
+            conn.execute("PRAGMA foreign_keys = ON;")  # Enabling foreign key constraint enforcement
+            c = conn.cursor()
+            c.execute("INSERT INTO Feedback (feedback_id, course_id, student_id, feedback_text) VALUES (?, ?, ?, ?)",
+                    (feedback_dto.feedback_id, feedback_dto.course_id, feedback_dto.student_id, feedback_dto.feedback_text))
+            conn.commit()
+        except sqlite3.IntegrityError as e:
+            print(f"Error: {e}")
+            return False
+        finally:
+            conn.close()
+        return True
 
     def read_feedback(self, feedback_id):
         """
@@ -44,8 +50,10 @@ class FeedbackDAO:
         c = conn.cursor()
         c.execute("UPDATE Feedback SET course_id = ?, student_id = ?, feedback_text = ? WHERE feedback_id = ?",
                   (feedback_dto.course_id, feedback_dto.student_id, feedback_dto.feedback_text, feedback_dto.feedback_id))
+        changes = conn.total_changes
         conn.commit()
         conn.close()
+        return changes > 0
 
     def delete_feedback(self, feedback_id):
         """
@@ -55,8 +63,10 @@ class FeedbackDAO:
         conn.execute("PRAGMA foreign_keys = ON;")  # Enabling foreign key constraint enforcement
         c = conn.cursor()
         c.execute("DELETE FROM Feedback WHERE feedback_id = ?", (feedback_id,))
+        changes = conn.total_changes
         conn.commit()
         conn.close()
+        return changes > 0
 
     def list_feedback_by_course(self, course_id):
         """

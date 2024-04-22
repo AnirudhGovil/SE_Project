@@ -111,6 +111,7 @@ for student in students:
         # Now the values lie between 1 and 10, convert all values to ints
         student_profile_vector = [int(np.round(value)) for value in student_profile_vector]
 
+        # structure of the feedback form
         course_feedback_forms[student][course] = {
             feedback_questions[0]: student_profile_vector[0],
             feedback_questions[1]: student_profile_vector[1],

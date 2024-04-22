@@ -12,13 +12,19 @@ class RatingDAO:
         """
         Adds a new rating to the database.
         """
-        conn = sqlite3.connect(self.db_path)
-        conn.execute("PRAGMA foreign_keys = ON;")  # Enabling foreign key constraint enforcement
-        c = conn.cursor()
-        c.execute("INSERT INTO Ratings (rating_id, course_id, student_id, rating_value) VALUES (?, ?, ?, ?)",
-                  (rating_dto.rating_id, rating_dto.course_id, rating_dto.student_id, rating_dto.rating_value))
-        conn.commit()
-        conn.close()
+        try:
+            conn = sqlite3.connect(self.db_path)
+            conn.execute("PRAGMA foreign_keys = ON;")  # Enabling foreign key constraint enforcement
+            c = conn.cursor()
+            c.execute("INSERT INTO Ratings (rating_id, course_id, student_id, rating_value) VALUES (?, ?, ?, ?)",
+                    (rating_dto.rating_id, rating_dto.course_id, rating_dto.student_id, rating_dto.rating_value))
+            conn.commit()
+        except sqlite3.IntegrityError as e:
+            print(f"Error: {e}")
+            return False
+        finally:
+            conn.close()
+        return True
 
     def read_rating(self, rating_id):
         """

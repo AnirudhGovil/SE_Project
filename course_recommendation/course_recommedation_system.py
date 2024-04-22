@@ -16,6 +16,10 @@ class CourseRecommendationSystem:
         self.course_features_filtered = {}
         self.model = model
 
+        # Load course summaries
+        with open('data_generation/course_summaries.json') as f:
+            self.course_summaries = json.load(f)
+
     def load_courses(self):
         """
         Loads the course data from a JSON file.
@@ -35,9 +39,33 @@ class CourseRecommendationSystem:
         Returns:
         - course_features_aggregated: A dictionary containing aggregated course features, with course IDs as keys.
         """
-        with open('data_generation/course_features_aggregated.pkl', 'rb') as file:
-            course_features_aggregated = pickle.load(file)
-        return course_features_aggregated
+        with open('data_generation/course_feedback_forms_by_course.json') as f:
+            course_feedback_forms_by_course = json.load(f)
+
+        # Create a dictionary of course feedback forms indexed by course id
+        course_feedback_forms = {}
+        for course in course_feedback_forms_by_course:
+            course_feedback_forms[course] = {}
+            for feedback in course_feedback_forms_by_course[course]:
+                course_feedback_forms[course][feedback['Student']] = feedback['Feedback']
+
+
+        # Now create vector of features for each course
+        course_features = {}
+        for course in course_feedback_forms:
+            course_features[course] = np.array([list(feedback.values()) for feedback in course_feedback_forms[course].values()])
+
+        # Aggregate the features for each course
+        course_features_aggregated = {}
+        for course in course_features:
+            course_features_aggregated[course] = np.mean(course_features[course], axis=0)
+
+        # Save the aggregated features to a json file
+        course_features_aggregated_json = {course: course_features_aggregated[course].tolist() for course in course_features_aggregated}
+
+        # with open('data_generation/course_features_aggregated.pkl', 'rb') as file:
+        #     course_features_aggregated = pickle.load(file)
+        return course_features_aggregated_json
 
     def load_course_feedback_forms(self):
         """
@@ -108,6 +136,20 @@ class CourseRecommendationSystem:
             for i in range(len(feature_labels)):
                 print(feature_labels[i], ': ', self.course_features_filtered[course_id][i])
             print('')
+
+        recommended_courses = []
+        for index in indices:
+            course_id = list(self.course_features_filtered.keys())[index]
+            course_data = {
+                'name': self.courses[course_id]['Name'],
+                'course_id': course_id,
+                'features': {label: self.course_features_filtered[course_id][i] for i, label in enumerate(feature_labels)}
+            }
+            # Add summary if available
+            if course_id in self.course_summaries:
+                course_data['summary'] = self.course_summaries[course_id]
+            recommended_courses.append(course_data)
+        return recommended_courses
         
     def print_similar_courses(self, courses_taken_aggregated, feature_labels):
         """
@@ -130,3 +172,17 @@ class CourseRecommendationSystem:
             for i in range(len(feature_labels)):
                 print(feature_labels[i], ': ', self.course_features_filtered[course_id][i])
             print('')
+
+        similar_courses = []
+        for index in indices_similar:
+            course_id = list(self.course_features_filtered.keys())[index]
+            course_data = {
+                'name': self.courses[course_id]['Name'],
+                'course_id': course_id,
+                'features': {label: self.course_features_filtered[course_id][i] for i, label in enumerate(feature_labels)}
+            }
+            # Add summary if available
+            if course_id in self.course_summaries:
+                course_data['summary'] = self.course_summaries[course_id]
+            similar_courses.append(course_data)
+        return similar_courses

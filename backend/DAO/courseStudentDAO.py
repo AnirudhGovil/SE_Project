@@ -47,8 +47,10 @@ class CourseStudentDAO:
         c = conn.cursor()
         c.execute("UPDATE CourseStudents SET course_id = ?, student_id = ? WHERE course_id = ? AND student_id = ?",
                   (new_course_id, new_student_id, original_course_id, original_student_id))
+        changes = conn.total_changes
         conn.commit()
         conn.close()
+        return changes > 0
 
     def delete_course_student(self, course_id, student_id):
         """
@@ -59,8 +61,10 @@ class CourseStudentDAO:
         c = conn.cursor()
         c.execute("DELETE FROM CourseStudents WHERE course_id = ? AND student_id = ?",
                   (course_id, student_id))
+        changes = conn.total_changes
         conn.commit()
         conn.close()
+        return changes > 0
 
     def find_courses_by_student(self, student_id):
         """

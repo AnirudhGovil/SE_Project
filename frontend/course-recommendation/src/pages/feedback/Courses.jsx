@@ -1,13 +1,23 @@
-// CoursesPage.js
-
-import React from "react";
-import { useRecoilValue } from "recoil";
-import { Link } from "react-router-dom";
-import { courseState } from "../../atoms/CourseState";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import { Card, Button, Container, Row, Col } from "react-bootstrap";
 
 const Courses = () => {
-  const courses = useRecoilValue(courseState);
+  const [courses, setCourses] = useState([]);
+
+  useEffect(() => {
+    const fetchCourses = async () => {
+      try {
+        const response = await axios.get('http://localhost:8080/generatedCourses');
+        setCourses(response.data); // Assuming response.data is an array of courses
+        localStorage.setItem('courses', JSON.stringify(response.data));
+      } catch (error) {
+        console.error("Error fetching courses:", error);
+      }
+    };
+
+    fetchCourses();
+  }, []);
 
   return (
     <Container>
@@ -24,6 +34,13 @@ const Courses = () => {
 };
 
 const CourseCard = ({ course }) => {
+  const handleFeedbackClick = () => {
+    // Store the selected course ID in local storage
+    localStorage.setItem('selectedCourse', JSON.stringify(course));
+    // Redirect to the feedback form
+    window.location.href = '/feedback';
+  };
+
   return (
     <Card className="mb-4">
       <Card.Body>
@@ -34,13 +51,10 @@ const CourseCard = ({ course }) => {
           <strong>Credits Worth:</strong> {course['Credits Worth']}<br />
           <strong>Year:</strong> {course.Year}
         </Card.Text>
-        <Link to={`/feedback/${course.ID}`}>
-          <Button variant="primary">Give Feedback</Button>
-        </Link>
+        <Button variant="primary" onClick={handleFeedbackClick}>Give Feedback</Button>
       </Card.Body>
     </Card>
   );
-}
-
+};
 
 export default Courses;

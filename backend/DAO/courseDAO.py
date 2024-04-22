@@ -45,8 +45,10 @@ class CourseDAO:
         c = conn.cursor()
         c.execute("UPDATE Courses SET name = ?, session = ?, instructor_id = ? WHERE course_id = ?",
                   (course_dto.name, course_dto.session, course_dto.instructor_id, course_dto.course_id))
+        changes = conn.total_changes
         conn.commit()
         conn.close()
+        return changes > 0
 
     def delete_course(self, course_id):
         """
@@ -56,8 +58,22 @@ class CourseDAO:
         conn.execute("PRAGMA foreign_keys = ON;")  # Enabling foreign key constraint enforcement
         c = conn.cursor()
         c.execute("DELETE FROM Courses WHERE course_id = ?", (course_id,))
+        changes = conn.total_changes
         conn.commit()
         conn.close()
+        return changes > 0
+
+    def list_all_courses(self):
+        """
+        Returns a list of all courses in the database.
+        """
+        conn = sqlite3.connect(self.db_path)
+        conn.execute("PRAGMA foreign_keys = ON;")  # Enabling foreign key constraint enforcement
+        c = conn.cursor()
+        c.execute("SELECT course_id, name, session, instructor_id FROM Courses")
+        results = c.fetchall()
+        conn.close()
+        return [CourseDTO(*row) for row in results]
 
     def find_courses_by_instructor(self, instructor_id):
         """
