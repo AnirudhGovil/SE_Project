@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import {React} from 'react'
+import { React } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -22,12 +22,15 @@ import Recommendation from './pages/rcmd/RecommendForm';
 
 import { RecoilRoot, useRecoilValue } from 'recoil';
 import { loginState } from './atoms/LoginState';
+import NavBar from './pages/home/NavBar'
 
 
 function App() {
 
   return (
+    <>
 
+      <NavBar />
       <RecoilRoot>
         <BrowserRouter>
           <Routes>
@@ -39,21 +42,24 @@ function App() {
           </Routes>
         </BrowserRouter>
       </RecoilRoot>
+    </>
+
+
   )
 }
 
 function PrivateRoute({ component: Component, ...rest }) {
   // const loggedIn = localStorage.getItem('token');
 
-  const [login, setLogin] = useState(useRecoilValue(loginState));
+  // const [login, setLogin] = useState(useRecoilValue(loginState));
 
-  const token = localStorage.getItem('token');
-  const email = localStorage.getItem('email');
-  if (token != null) {
-    setLogin({ loggedIn: true, token: token, email: email });
-  }
+  // const token = localStorage.getItem('token');
+  // const email = localStorage.getItem('email');
+  // if (token != null) {
+  //   setLogin({ loggedIn: true, token: token, email: email });
+  // }
 
-  return login.loggedIn ? (<Component {...rest} />) : (<Navigate to="/login" />);
+  return (localStorage.getItem('token')) ? (<Component {...rest} />) : (<Navigate to="/login" />);
 
 }
 
