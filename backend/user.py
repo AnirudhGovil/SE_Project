@@ -13,16 +13,18 @@ CORS(app,supports_credentials=True)
 
 users = [
     {
+        'role': 'student',
         'email': 'raj@gmail.com',
         'password': '1234'
     },
     {
+        'role': 'faculty',
         'email': 'hari@gmail.com',
         'password': '1234'
     }
 ]
 
-@app.route('/login/', methods=['POST'])
+@app.route('/login', methods=['POST'])
 @cross_origin(supports_credentials=True)
 def login():
     # data = request.data
@@ -36,20 +38,32 @@ def login():
 
     for user in users:
         if user['email'] == email and user['password'] == password:
-            return jsonify({'message': 'Login successful'})
+            # return jsonify({'message': 'Login successful'})
+            # create token 
+            token = "12345"
+            return jsonify({'success': True , 'user': { 'role': user['role'], 'email': user['email'] , 'token': token}})
+        
     return jsonify({'message': 'Login failed'})
 
-    return jsonify({'message': 'Login successful'})
+    # return jsonify({'message': 'Login successful'})
 
 
 
 
-@app.route('/signup/', methods=['POST'])
+@app.route('/signup', methods=['POST'])
 def signup():
     data = request.get_json()
+    role = data.get('role')
     email = data.get('email')
     password = data.get('password')
-    return jsonify({'email': email, 'password': password})
+
+    users.append({
+        'role': role,
+        'email': email,
+        'password': password
+    })
+    return jsonify( {'success': True , 'message': 'Signup successful'})
+
 
 if __name__ == '__main__':
 

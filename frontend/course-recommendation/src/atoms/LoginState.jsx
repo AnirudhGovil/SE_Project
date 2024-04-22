@@ -1,7 +1,7 @@
 import {atom, selector } from 'recoil';
 import { useSetRecoilState } from 'recoil';
 
-import { login_api } from '../../Helper';
+import { login_api } from '../Helper';
 
 export const loginState = atom(
 
@@ -11,10 +11,9 @@ export const loginState = atom(
         key: 'loginState',
         default: {
             token: '',
-            username: '',
+            email: '',
             loggedIn: false,
         },
     }
-
 
 );

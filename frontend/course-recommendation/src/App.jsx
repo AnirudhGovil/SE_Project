@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import {React} from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -19,35 +20,42 @@ import FeedbackForm from './pages/feedback/FeedBackForm';
 // import Feedback from './pages/feedback/Feedback';
 import Recommendation from './pages/rcmd/RecommendForm';
 
+import { RecoilRoot, useRecoilValue } from 'recoil';
+import { loginState } from './atoms/LoginState';
+
+
 function App() {
 
   return (
 
-    <BrowserRouter>
-    <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<SignUp />} />
-
-
-        {/* <PrivateRoute path="/feedback" component={FeedbackForm} />
-        <PrivateRoute path="/recommendation" component={Recommendation} /> */}
-
-        <Route path="/feedback" element={<PrivateRoute component={FeedbackForm} />} />
-        <Route path="/recommendation" element={<PrivateRoute component={Recommendation} />} />
-        
-      </Routes>
-
-    </BrowserRouter>
+      <RecoilRoot>
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/feedback" element={<PrivateRoute component={FeedbackForm} />} />
+            <Route path="/recommendation" element={<PrivateRoute component={Recommendation} />} />
+          </Routes>
+        </BrowserRouter>
+      </RecoilRoot>
   )
 }
 
 function PrivateRoute({ component: Component, ...rest }) {
-  const loggedIn = localStorage.getItem('token');
+  // const loggedIn = localStorage.getItem('token');
 
-  return loggedIn ? ( <Component {...rest} /> ) : ( <Navigate to="/login" /> );
- 
+  const [login, setLogin] = useState(useRecoilValue(loginState));
+
+  const token = localStorage.getItem('token');
+  const email = localStorage.getItem('email');
+  if (token != null) {
+    setLogin({ loggedIn: true, token: token, email: email });
+  }
+
+  return login.loggedIn ? (<Component {...rest} />) : (<Navigate to="/login" />);
+
 }
 
 
-export default App
+export default App;

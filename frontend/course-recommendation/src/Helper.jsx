@@ -1,9 +1,9 @@
 
 // declare base api url and export it
 
-const BaseUrl = 'http://localhost:5000/api';
-const login_api = BaseUrl + '/auth/login';
-const signup_api = BaseUrl + '/auth/signup';
+const BaseUrl = 'http://localhost:5000';
+const login_api = BaseUrl + '/login';
+const signup_api = BaseUrl + '/signup';
 
 
 
