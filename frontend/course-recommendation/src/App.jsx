@@ -23,6 +23,7 @@ import Recommendation from './pages/rcmd/RecommendForm';
 import { RecoilRoot, useRecoilValue } from 'recoil';
 import { loginState } from './atoms/LoginState';
 import NavBar from './pages/home/NavBar'
+import Courses from './pages/feedback/Courses'
 
 
 function App() {
@@ -34,9 +35,11 @@ function App() {
       <RecoilRoot>
         <BrowserRouter>
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/home" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
+
+            <Route path="/courses" element= {<PrivateRoute component={Courses} />} />
             <Route path="/feedback" element={<PrivateRoute component={FeedbackForm} />} />
             <Route path="/recommendation" element={<PrivateRoute component={Recommendation} />} />
           </Routes>

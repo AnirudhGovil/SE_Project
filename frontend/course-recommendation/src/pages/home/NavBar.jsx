@@ -14,6 +14,7 @@ const NavBar = () => {
           <Nav.Link href="/home">Home</Nav.Link>
           {isLoggedIn && (
             <>
+                <Nav.Link href="/courses">Courses</Nav.Link>
               <Nav.Link href="/feedback">Feedback</Nav.Link>
               <Nav.Link href="/recommendation">Recommendation</Nav.Link>
             </>
